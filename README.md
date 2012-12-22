@@ -1,4 +1,4 @@
 fog
 ===
 
-Desktop Application for secure your secret correspondence.
+Desktop application for privacy of your correspondence.
