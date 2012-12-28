@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-    <!--<title></title>-->
-    <!--<meta charset="utf-8" />-->
+    <title></title>
+    <meta charset="utf-8" />
 
-    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width">
 
-    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="app/style/metro/bootmetro/content/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="app/style/metro/bootmetro/content/css/bootstrap-responsive.css">
@@ -16,77 +16,70 @@
     <link rel="stylesheet" type="text/css" href="app/style/metro/bootmetro/content/css/metro-ui-light.css">
     <link rel="stylesheet" type="text/css" href="app/style/metro/bootmetro/content/css/icomoon.css">
 
+
+    <link rel="stylesheet" type="text/css" href="app/style/css/main.css">
+
     <script src="app/js/libs/modernizr-2.6.1.min.js"></script>
 </head>
 <body>
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <a class="brand" href="#">Title</a>
-        <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-        </ul>
-    </div>
-</div>
+<div class="container-fluid cnt">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="metro wrapTile" >
 
-<script>
-    var gui = require('nw.gui');
+                <a class="tile square text tilesquareblock" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">Main</div>
+                </a>
 
-    onload = function() {
-        gui.Window.get().show();
-    }
-</script>
+                <a class="tile wide text bg-color-blueDark" href="#">
+                    <div class="text-header">Welcome</div>
+                    </br>
+                    <div class="text">
+                        FOG - application for privacy of your correspondence.
+                    </div>
+                </a>
 
-<div>Minimize to tray</div>
-
-<script>
-    // Load library
-    var gui = require('nw.gui');
-
-    // Reference to window and tray
-    var win = gui.Window.get();
-    var tray;
-
-    // Get the minimize event
-    win.on('minimize', function() {
-        // Hide window
-        this.hide();
-
-        // Show tray
-        tray = new gui.Tray({ icon: 'label.png' });
-
-        // Show window and remove tray when clicked
-        tray.on('click', function() {
-            win.show();
-            this.remove();
-            tray = null;
-        });
-    });
-</script>
-
-
-<div class="container">
-    <div class="row">
-        <div class="span4">
-            <div style="height: 100px; background: green;"></div>
-        </div>
-        <div class="span8">
-            <div style="height: 100px; background: green;"></div>
+                <a class="tile square text tilesquareblock" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">How to</div>
+                </a>
+                <a class="tile square text tilesquareblock" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon="j"></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">Secret key</div>
+                </a>
+                <a class="tile square text tilesquareblock" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text"> Go</div>
+                </a>
+            </div>
         </div>
     </div>
-
-    <hr>
-
-    <footer>
-        <p>I using node.js <script>document.write(process.version)</script></p>
-    </footer>
 </div>
 
 
 <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
-
 
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/jquery.scrollTo.js"></script>
@@ -97,9 +90,9 @@
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/holder.js"></script>
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/bootstrap-datepicker.js"></script>
 
-<!--<script type="text/javascript">-->
-    <!--$(".metro").metro();-->
-<!--</script>-->
+<script type="text/javascript">
+    $(".metro").metro();
+</script>
 
 </body>
 </html>

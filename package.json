@@ -1,21 +1,17 @@
 {
     "main": "index.html",
-    "name": "fog",
-    "description": "demo",
+    "name": "fogss",
     "version": "0.1",
-    "keywords": [ "demo", "node-webkit" ],
-    "maintainers" : [ {"name": "Rafael Kyrdan", "email": ""," web": "" }],
-    "repositories": [{"type": "git", "url": "http://github.com/rafaelkyrdan", "path": ""}],
     "window": {
         "title" : "Туман",
-        "as_desktop" : true,
+        "icon": "app/img/label.png",
+        "as_desktop" : false,
         "resizable" : true,
         "always-on-top" : false,
         "fullscreen" : false,
-        "frame" : true,
-        "show" : false,
         "kiosk" : false,
-        "icon": "app/img/label.png",
+        "frame" : true,
+        "show" : true,
         "toolbar": true,
         "width": 800,
         "height": 500,
@@ -23,14 +19,11 @@
         "min_width": 400,
         "min_height": 200,
         "max_width": 800,
-        "max_height": 600
+        "max_height": 750
     },
     "webkit": {
         "plugin": false,
         "java" : false,
         "page-cache" : false
-    },
-    "nodejs" : true,
-    "node-main" : "" ,
-    "single-instance" : true
+    }
 }
