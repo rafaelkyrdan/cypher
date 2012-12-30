@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <title></title>
     <meta charset="utf-8" />
@@ -20,64 +20,201 @@
     <link rel="stylesheet" type="text/css" href="app/style/css/main.css">
 
     <script src="app/js/libs/modernizr-2.6.1.min.js"></script>
+    <script src="app/js/templates.js"></script>
+    <script src="app/js/init.js"></script>
+    <script src="app/js/util.js"></script>
+    <script src="app/js/ui.js"></script>
+
 </head>
 <body>
 
-<div class="container-fluid cnt">
+<div class="container-fluid">
     <div class="row-fluid">
-        <div class="span12">
-            <div class="metro wrapTile" >
-
-                <a class="tile square text tilesquareblock" href="#">
-                    <div class="text-big">
-                        <div class="glyph">
-                            <div class="fs1" aria-hidden="true" data-icon=""></div>
-                        </div>
+        <div class="span5">
+            <div style="border: 1px solid black; height: 50px;">
+                <h1>Text:</h1>
+            </div>
+        </div>
+        <div class="span2">
+            <div style="">
+                <div style="font-size: 40px; text-align: center; color: white; padding-top: 10px;">
+                    <div class="glyph">
+                        <div class="fs1" aria-hidden="true" data-icon=""></div>
                     </div>
-                    <br/>
-                    <div class="text">Main</div>
-                </a>
-
-                <a class="tile wide text bg-color-blueDark" href="#">
-                    <div class="text-header">Welcome</div>
-                    </br>
-                    <div class="text">
-                        FOG - application for privacy of your correspondence.
-                    </div>
-                </a>
-
-                <a class="tile square text tilesquareblock" href="#">
-                    <div class="text-big">
-                        <div class="glyph">
-                            <div class="fs1" aria-hidden="true" data-icon=""></div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div class="text">How to</div>
-                </a>
-                <a class="tile square text tilesquareblock" href="#">
-                    <div class="text-big">
-                        <div class="glyph">
-                            <div class="fs1" aria-hidden="true" data-icon="j"></div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div class="text">Secret key</div>
-                </a>
-                <a class="tile square text tilesquareblock" href="#">
-                    <div class="text-big">
-                        <div class="glyph">
-                            <div class="fs1" aria-hidden="true" data-icon=""></div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div class="text"> Go</div>
-                </a>
+                </div>
+            </div>
+        </div>
+        <div class="span5">
+            <div style="border: 1px solid black; height: 50px;">
+                <h1>Crypto:</h1>
             </div>
         </div>
     </div>
-</div>
+    </br>
+    <div class="row-fluid">
+        <div class="span5">
+            <div style="border: 1px solid black; height: 200px;">
 
+            </div>
+        </div>
+        <div class="span2">
+            <div style="border: 1px solid black; height: 200px;">
+
+            </div>
+        </div>
+        <div class="span5">
+            <div style="border: 1px solid black; height: 200px;">
+                <form class="form-inline">
+                    <input type="text" class="input-small" placeholder="Email">
+                    <input type="password" class="input-small" placeholder="Password">
+                    <label class="checkbox">
+                        <input type="checkbox"><span class="metro-checkbox">Remember me</span>
+                    </label>
+                    <button type="submit" class="btn">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row-fluid">-->
+        <!--<div class="span12">-->
+            <!--<div class="metro wrapTile">-->
+
+                <!--<a class="tile square text tilesquareblock" data-href="main" href="#">-->
+                    <!--<div class="text-big">-->
+                        <!--<div class="glyph">-->
+                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<br/>-->
+                    <!--<div class="text">Main</div>-->
+                <!--</a>-->
+
+                <!--<a class="tile wide text bg-color-blueDark" data-href="main" href="#">-->
+                    <!--<div class="text-header">Welcome</div>-->
+                    <!--</br>-->
+                    <!--<div class="text">-->
+                        <!--FOG - application for privacy of your correspondence.-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a class="tile square text tilesquareblock" data-href="howTo" href="#">-->
+                    <!--<div class="text-big">-->
+                        <!--<div class="glyph">-->
+                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<br/>-->
+                    <!--<div class="text">How to</div>-->
+                <!--</a>-->
+                <!--<a class="tile square text tilesquareblock" data-href="settings" href="#">-->
+                    <!--<div class="text-big">-->
+                        <!--<div class="glyph">-->
+                            <!--<div class="fs1" aria-hidden="true" data-icon="j"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<br/>-->
+                    <!--<div class="text">Secret key</div>-->
+                <!--</a>-->
+                <!--<a class="tile square text tilesquareblock" data-href="go" href="#">-->
+                    <!--<div class="text-big">-->
+                        <!--<div class="glyph">-->
+                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<br/>-->
+                    <!--<div class="text"> Go</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;end wrapTile&ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash;end span 12&ndash;&gt;-->
+    <!--</div>-->
+    <footer class="win-commandlayout navbar-fixed-bottom win-ui-dark">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span6 align-left">
+
+                    <a class="win-command">
+                        <span class="win-commandimage win-commandring">!</span>
+                        <span class="win-label">Home</span>
+                    </a>
+
+                    <hr class="win-command">
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Add</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring">R</span>
+                        <span class="win-label">Save</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Reload</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Previous</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Next</span>
+                    </button>
+
+                </div>
+
+                <div class="span6 align-right">
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Settings</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Download</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Upload</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Send Email</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring">g</span>
+                        <span class="win-label">Search</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Delete</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">User</span>
+                    </button>
+
+                    <button class="win-command">
+                        <span class="win-commandimage win-commandring"></span>
+                        <span class="win-label">Users</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+</div>
 
 <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
 
