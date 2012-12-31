@@ -18,8 +18,12 @@
 
 
     <link rel="stylesheet" type="text/css" href="app/style/css/main.css">
+    <link rel="stylesheet" type="text/css" href="app/style/css/go.css">
+    <link rel="stylesheet" type="text/css" href="app/style/css/start.css">
 
     <script src="app/js/libs/modernizr-2.6.1.min.js"></script>
+    <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
+
     <script src="app/js/templates.js"></script>
     <script src="app/js/init.js"></script>
     <script src="app/js/util.js"></script>
@@ -28,50 +32,42 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div id="content" class="container-fluid">
     <div class="row-fluid">
         <div class="span5">
-            <div style="border: 1px solid black; height: 50px;">
-                <h1>Text:</h1>
-            </div>
+            <h2 data-value="crypto-text:">text:</h2>
         </div>
         <div class="span2">
-            <div style="">
-                <div style="font-size: 40px; text-align: center; color: white; padding-top: 10px;">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon=""></div>
-                    </div>
+            <div class="changeDirection">
+                <div class="glyph">
+                    <div class="fs1" aria-hidden="true" data-icon=""></div>
                 </div>
             </div>
         </div>
         <div class="span5">
-            <div style="border: 1px solid black; height: 50px;">
-                <h1>Crypto:</h1>
-            </div>
+            <h2 data-value="text:" class="align-right">crypto-text:</h2>
         </div>
     </div>
     </br>
     <div class="row-fluid">
-        <div class="span5">
-            <div style="border: 1px solid black; height: 200px;">
-
+        <div class="span6">
+            <div class="wrapTextArea">
+                <textarea id="left" placeholder="Enter here"></textarea>
+                 <div class="tools">
+                    <span data-id="left" data-action="select" rel="tooltip"  title="Select all"><i class="icon-list"></i></span>
+                    <span data-id="left" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload"></i></span>
+                    <span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                 </div>
             </div>
         </div>
-        <div class="span2">
-            <div style="border: 1px solid black; height: 200px;">
-
-            </div>
-        </div>
-        <div class="span5">
-            <div style="border: 1px solid black; height: 200px;">
-                <form class="form-inline">
-                    <input type="text" class="input-small" placeholder="Email">
-                    <input type="password" class="input-small" placeholder="Password">
-                    <label class="checkbox">
-                        <input type="checkbox"><span class="metro-checkbox">Remember me</span>
-                    </label>
-                    <button type="submit" class="btn">Sign in</button>
-                </form>
+        <div class="span6">
+            <div class="wrapTextArea">
+                <textarea id="right" placeholder="Copy to clipboard"></textarea>
+                <div class="tools">
+                    <span data-id="right" data-action="select" rel="tooltip"  title="Select all"><i class="icon-list"></i></span>
+                    <span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload"></i></span>
+                    <span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                </div>
             </div>
         </div>
     </div>
@@ -86,7 +82,7 @@
                         <!--</div>-->
                     <!--</div>-->
                     <!--<br/>-->
-                    <!--<div class="text">Main</div>-->
+                    <!--<div class="text">Start</div>-->
                 <!--</a>-->
 
                 <!--<a class="tile wide text bg-color-blueDark" data-href="main" href="#">-->
@@ -109,7 +105,8 @@
                 <!--<a class="tile square text tilesquareblock" data-href="settings" href="#">-->
                     <!--<div class="text-big">-->
                         <!--<div class="glyph">-->
-                            <!--<div class="fs1" aria-hidden="true" data-icon="j"></div>-->
+                            <!--&lt;!&ndash;<div class="fs1" aria-hidden="true" data-icon="j"></div>&ndash;&gt;-->
+                            <!--<div class="fs1" aria-hidden="true" data-icon="k"></div>-->
                         <!--</div>-->
                     <!--</div>-->
                     <!--<br/>-->
@@ -129,94 +126,42 @@
         <!--</div>-->
         <!--&lt;!&ndash;end span 12&ndash;&gt;-->
     <!--</div>-->
-    <footer class="win-commandlayout navbar-fixed-bottom win-ui-dark">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span6 align-left">
 
-                    <a class="win-command">
-                        <span class="win-commandimage win-commandring">!</span>
-                        <span class="win-label">Home</span>
-                    </a>
-
-                    <hr class="win-command">
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Add</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring">R</span>
-                        <span class="win-label">Save</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Reload</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Previous</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="span6 align-right">
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Settings</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Download</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Upload</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Send Email</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring">g</span>
-                        <span class="win-label">Search</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Delete</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">User</span>
-                    </button>
-
-                    <button class="win-command">
-                        <span class="win-commandimage win-commandring"></span>
-                        <span class="win-label">Users</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--end footer-->
 </div>
 
-<script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
+<footer class="win-commandlayout navbar-fixed-bottom win-ui-dark">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span6 align-left">
+
+                <hr class="win-command">
+
+                <button class="win-command">
+                    <span class="win-commandimage win-commandring"><i class="icon-home-4"></i></span>
+                    <span class="win-label">Start</span>
+                </button>
+
+                <button class="win-command">
+                    <span class="win-commandimage win-commandring"><i class="icon-help-4"></i></span>
+                    <span class="win-label">How to</span>
+                </button>
+
+                <button class="win-command">
+                    <span class="win-commandimage win-commandring"><i class="icon-key-fill"></i></span>
+                    <span class="win-label">Secret Key</span>
+                </button>
+
+                <button class="win-command">
+                    <span class="win-commandimage win-commandring"><i class="icon-arrow-right-7"></i></span>
+                    <span class="win-label">Go</span>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--end footer-->
 
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="app/style/metro/bootmetro/scripts/jquery.scrollTo.js"></script>
