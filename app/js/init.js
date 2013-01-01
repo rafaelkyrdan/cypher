@@ -1,3 +1,5 @@
+
+
 function init () {
 
     ui.context = document.querySelector('#content');
@@ -13,7 +15,7 @@ function init () {
     ui.context.querySelector("div.changeDirection").onclick = function (e) {
         ui.changeDirection();
         return false;
-    }
+    };
 
     var spans = ui.context.querySelectorAll(".tools > span");
     for (var i = 0; i < spans.length; i++) {
@@ -26,6 +28,20 @@ function init () {
 }
 
 window.onload = init;
+
+// Load native UI library
+var gui = require('nw.gui');
+// We can not create a clipboard, we have to receive the system clipboard
+var clipboard = gui.Clipboard.get();
+var win = gui.Window.get();
+
+// Listen to the minimize event
+win.on('loaded', function() {
+    gui.Window.get().show();
+});
+
+
+
 
 function w (a,b,c,d) {
      console.log(a,b,c,d);

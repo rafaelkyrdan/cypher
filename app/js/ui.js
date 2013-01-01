@@ -20,11 +20,11 @@ ui = {
         var action = obj.dataset.action;
 
         switch (action) {
-            case "select":
-                ui.setSelection(textArea);
+            case "get" :
+                util.getFromClipBoard();
                 break;
             case "copy" :
-                util.copyToClipBoard(textArea.innerText);
+                util.copyToClipBoard(textArea.value);
                 break;
             case "remove" :
                 textArea.value = "";
@@ -34,21 +34,5 @@ ui = {
                 break;
         }
 
-    },
-
-    setSelection : function (target) {
-        var rng, sel;
-        if ( document.createRange ) {
-            rng = document.createRange();
-            rng.selectNode( target);
-            sel = window.getSelection();
-            sel.removeAllRanges();
-            sel.addRange( rng );
-
-        } else {
-            var rng = document.body.createTextRange();
-            rng.moveToElementText( target );
-            rng.select();
-        }
     }
 };

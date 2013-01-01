@@ -11,7 +11,7 @@
         "fullscreen" : false,
         "kiosk" : false,
         "frame" : true,
-        "show" : true,
+        "show" : false,
         "toolbar": true,
         "width": 800,
         "height": 500,
