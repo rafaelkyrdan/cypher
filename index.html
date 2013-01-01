@@ -33,42 +33,66 @@
 <body>
 
 <div id="content" class="container-fluid">
-    <div class="row-fluid">
-        <div class="span5">
-            <h2 data-value="crypto-text:">text:</h2>
-        </div>
-        <div class="span2">
-            <div class="changeDirection">
-                <div class="glyph">
-                    <div class="fs1" aria-hidden="true" data-icon=""></div>
-                </div>
-            </div>
-        </div>
-        <div class="span5">
-            <h2 data-value="text:" class="align-right">crypto-text:</h2>
-        </div>
+
+    <!--settings-->
+
+    <div class="page-header">
+        <h1>Secret key</h1>
     </div>
-    </br>
-    <div class="row-fluid">
-        <div class="span6">
-            <div class="wrapTextArea">
-                <textarea id="left" placeholder="Enter here"></textarea>
-                 <div class="tools">
-                    <span data-id="left" data-action="get" rel="tooltip"  title="Get from clipboard"><i class="icon-download-3"></i></span>
-                    <span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
-                 </div>
-            </div>
-        </div>
-        <div class="span6">
-            <div class="wrapTextArea">
-                <textarea id="right" placeholder="Copy to clipboard"></textarea>
-                <div class="tools">
-                    <span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload-5"></i></span>
-                    <span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <form>
+        <fieldset>
+            <label><i aria-hidden="true" class="icon-key-stroke"></i> Public key</label>
+            <input name="public" type="text" placeholder="Type public key">
+            <label><i class="icon-key-fill"></i>  Private key</label>
+            <input name="private" type="password" placeholder="Type private key">
+            <span class="help-block">The data is deleted when you close the browser window.</span>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn">Change</button>
+        </fieldset>
+    </form>
+
+    <!--go-->
+    <!--<div class="row-fluid">-->
+        <!--<div class="span5">-->
+            <!--<h2 data-value="crypto-text:">text:</h2>-->
+        <!--</div>-->
+        <!--<div class="span2">-->
+            <!--<div class="changeDirection">-->
+                <!--<div class="glyph">-->
+                    <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="span5">-->
+            <!--<h2 data-value="text:" class="align-right">crypto-text:</h2>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--</br>-->
+    <!--<div class="row-fluid">-->
+        <!--<div class="span6">-->
+            <!--<div class="wrapTextArea">-->
+                <!--<textarea id="left" placeholder="Enter here"></textarea>-->
+                 <!--<div class="tools">-->
+                    <!--<span data-id="left" data-action="get" rel="tooltip"  title="Get from clipboard"><i class="icon-download-3"></i></span>-->
+                    <!--<span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>-->
+                 <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="span6">-->
+            <!--<div class="wrapTextArea">-->
+                <!--<textarea id="right" placeholder="Copy to clipboard"></textarea>-->
+                <!--<div class="tools">-->
+                    <!--<span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload-5"></i></span>-->
+                    <!--<span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--start-->
+
+
     <!--<div class="row-fluid">-->
         <!--<div class="span12">-->
             <!--<div class="metro wrapTile">-->
