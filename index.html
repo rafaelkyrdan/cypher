@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <title></title>
     <meta charset="utf-8" />
@@ -30,369 +30,395 @@
     <script src="app/js/init.js"></script>
     <script src="app/js/util.js"></script>
     <script src="app/js/ui.js"></script>
+    <script src="app/js/error.js"></script>
 
 </head>
 <body>
 
 <div id="content" class="container-fluid">
 
-    <div class="page-header">
-        <h1>How to</h1>
+    <!--start-->
+
+    <div id="start" class="row-fluid">
+        <div class="span12">
+            <div class="metro wrapTile">
+
+                <a class="tile square text tilesquareblock" data-href="start" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">Start</div>
+                </a>
+
+                <a class="tile wide text bg-color-blueDark" data-href="start" href="#">
+                    <div class="text-header">Welcome</div>
+                    </br>
+                    <div class="text">
+                        FOG - application for privacy of your correspondence.
+                    </div>
+                    <div class="text">
+                        your correspondence.
+                    </div>
+                </a>
+
+                <a class="tile square text tilesquareblock" data-href="howTo" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">How to</div>
+                </a>
+                <a class="tile square text tilesquareblock" data-href="settings" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <!--<div class="fs1" aria-hidden="true" data-icon="j"></div>-->
+                            <div class="fs1" aria-hidden="true" data-icon="k"></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text">Secret key</div>
+                </a>
+                <a class="tile square text tilesquareblock" data-href="go" href="#">
+                    <div class="text-big">
+                        <div class="glyph">
+                            <div class="fs1" aria-hidden="true" data-icon=""></div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text"> Go</div>
+                </a>
+            </div>
+            <!--end wrapTile-->
+        </div>
+        <!--end span 12-->
     </div>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#english" data-toggle="tab">English</a></li>
-        <li><a href="#russian" data-toggle="tab">Russian</a></li>
-    </ul>
-    <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade active in" id="english">
-            <div class="accordion" id="accordion1">
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
-                            About application.
-                        </a>
-                    </div>
-                    <div id="collapse1" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Diffie-Hellman key exchange was one of the earliest practical implementations of key
-                            exchange within the field of cryptography. It relies on the discrete logarithm problem.
-                            This test clip will be part of the final chapter of Gambling with Secrets!
-                            http://www.youtube.com/watch?v=3QnD2c4Xovk
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
-                            Why fog?
-                        </a>
-                    </div>
-                    <div id="collapse2" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Diffie-Hellman key exchange was one of the earliest practical implementations of key
-                            exchange within the field of cryptography. It relies on the discrete logarithm problem.
-                            This test clip will be part of the final chapter of Gambling with Secrets!
-                            http://www.youtube.com/watch?v=3QnD2c4Xovk
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
-                        How to create secret key.
-                        </a>
-                    </div>
-                    <div id="collapse3" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse4">
-                            How to create crypto-text.
-                        </a>
-                    </div>
-                    <div id="collapse4" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse5">
-                            How to read crypto-text.
-                        </a>
-                    </div>
-                    <div id="collapse5" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
-                            Tips.
-                        </a>
-                    </div>
-                    <div id="collapse6" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
-                            More about application.
-                        </a>
-                    </div>
-                    <div id="collapse7" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end accordion 1-->
+    <!--end start-->
+
+    <!--how to-->
+
+    <div id="howTo" class="none">
+
+        <div class="page-header">
+            <h1>How to</h1>
         </div>
-        <!--end tab english-->
-        <div class="tab-pane fade" id="russian">
-            <div class="accordion" id="accordion2">
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
-                            Почему fog?
-                        </a>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#english" data-toggle="tab">English</a></li>
+            <li><a href="#russian" data-toggle="tab">Russian</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="english">
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+                                About application.
+                            </a>
+                        </div>
+                        <div id="collapse1" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Diffie-Hellman key exchange was one of the earliest practical implementations of key
+                                exchange within the field of cryptography. It relies on the discrete logarithm problem.
+                                This test clip will be part of the final chapter of Gambling with Secrets!
+                                http://www.youtube.com/watch?v=3QnD2c4Xovk
+                            </div>
+                        </div>
                     </div>
-                    <div id="collapse8" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Проблема сохранения приватных данных и защиты от прослушивания интернет-каналов стоит сейчас как никогда остро.
-                            Каждый день вы обмениваетесь информацией с разными людьми, общаетесь и получаете данные.
-                            Уверен, вы меньше всего хотите, чтобы кто-то другой прослушивал ваши разговоры и читал ваши сообщения.
-                            Приложение использует алгоритм Диффи — Хеллмана. Допустим: вам и вашему собеседнику за океаном нужно обмениваться секретными сообщениями.
-                            Но ваш канал прослушивают, скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
-                            Существует множество способов зашифровать сообщение, но проблема в том, что ключ для шифрования нужно сообщить вашему собеседнику,
-                            а вы не можете встретиться физически, только по интернету.
-                            И если вы отправите ключ по интернету, то вся его суть теряется: прослушивающие злодеи тоже его получат.
-                            Простое и наглядное описание того, как работает алгоритм Диффи — Хеллмана,
-                            позволяющий двум сторонам получить секретный ключ используя прослушиваемый канал связи.
-                            http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+                                Why fog?
+                            </a>
+                        </div>
+                        <div id="collapse2" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Diffie-Hellman key exchange was one of the earliest practical implementations of key
+                                exchange within the field of cryptography. It relies on the discrete logarithm problem.
+                                This test clip will be part of the final chapter of Gambling with Secrets!
+                                http://www.youtube.com/watch?v=3QnD2c4Xovk
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
+                            How to create secret key.
+                            </a>
+                        </div>
+                        <div id="collapse3" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse4">
+                                How to create crypto-text.
+                            </a>
+                        </div>
+                        <div id="collapse4" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse5">
+                                How to read crypto-text.
+                            </a>
+                        </div>
+                        <div id="collapse5" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+                                Tips.
+                            </a>
+                        </div>
+                        <div id="collapse6" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
+                                More about application.
+                            </a>
+                        </div>
+                        <div id="collapse7" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
-                            Про приложение.
-                        </a>
-                    </div>
-                    <div id="collapse9" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Проблема сохранения приватных данных и защиты от прослушивания интернет-каналов стоит сейчас как никогда остро.
-                            Каждый день вы обмениваетесь информацией с разными людьми, общаетесь и получаете данные.
-                            Уверен, вы меньше всего хотите, чтобы кто-то другой прослушивал ваши разговоры и читал ваши сообщения.
-                            Приложение использует алгоритм Диффи — Хеллмана. Допустим: вам и вашему собеседнику за океаном нужно обмениваться секретными сообщениями.
-                            Но ваш канал прослушивают, скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
-                            Существует множество способов зашифровать сообщение, но проблема в том, что ключ для шифрования нужно сообщить вашему собеседнику,
-                            а вы не можете встретиться физически, только по интернету.
-                            И если вы отправите ключ по интернету, то вся его суть теряется: прослушивающие злодеи тоже его получат.
-                            Простое и наглядное описание того, как работает алгоритм Диффи — Хеллмана,
-                            позволяющий двум сторонам получить секретный ключ используя прослушиваемый канал связи.
-                            http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse10">
-                            Как создать секретный ключ.
-                        </a>
-                    </div>
-                    <div id="collapse10" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse11">
-                            Как зашифровать текст.
-                        </a>
-                    </div>
-                    <div id="collapse11" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse12">
-                            Как разшифровать текст.
-                        </a>
-                    </div>
-                    <div id="collapse12" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse13">
-                            Советы.
-                        </a>
-                    </div>
-                    <div id="collapse13" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse14">
-                            Узнать больше об используемых технологиях.
-                        </a>
-                    </div>
-                    <div id="collapse14" class="accordion-body in collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
+                <!--end accordion 1-->
             </div>
-            <!--end accordion 2-->
+            <!--end tab english-->
+            <div class="tab-pane fade" id="russian">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
+                                Почему fog?
+                            </a>
+                        </div>
+                        <div id="collapse8" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Проблема сохранения приватных данных и защиты от прослушивания интернет-каналов стоит сейчас как никогда остро.
+                                Каждый день вы обмениваетесь информацией с разными людьми, общаетесь и получаете данные.
+                                Уверен, вы меньше всего хотите, чтобы кто-то другой прослушивал ваши разговоры и читал ваши сообщения.
+                                Приложение использует алгоритм Диффи — Хеллмана. Допустим: вам и вашему собеседнику за океаном нужно обмениваться секретными сообщениями.
+                                Но ваш канал прослушивают, скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
+                                Существует множество способов зашифровать сообщение, но проблема в том, что ключ для шифрования нужно сообщить вашему собеседнику,
+                                а вы не можете встретиться физически, только по интернету.
+                                И если вы отправите ключ по интернету, то вся его суть теряется: прослушивающие злодеи тоже его получат.
+                                Простое и наглядное описание того, как работает алгоритм Диффи — Хеллмана,
+                                позволяющий двум сторонам получить секретный ключ используя прослушиваемый канал связи.
+                                http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
+                                Про приложение.
+                            </a>
+                        </div>
+                        <div id="collapse9" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Проблема сохранения приватных данных и защиты от прослушивания интернет-каналов стоит сейчас как никогда остро.
+                                Каждый день вы обмениваетесь информацией с разными людьми, общаетесь и получаете данные.
+                                Уверен, вы меньше всего хотите, чтобы кто-то другой прослушивал ваши разговоры и читал ваши сообщения.
+                                Приложение использует алгоритм Диффи — Хеллмана. Допустим: вам и вашему собеседнику за океаном нужно обмениваться секретными сообщениями.
+                                Но ваш канал прослушивают, скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
+                                Существует множество способов зашифровать сообщение, но проблема в том, что ключ для шифрования нужно сообщить вашему собеседнику,
+                                а вы не можете встретиться физически, только по интернету.
+                                И если вы отправите ключ по интернету, то вся его суть теряется: прослушивающие злодеи тоже его получат.
+                                Простое и наглядное описание того, как работает алгоритм Диффи — Хеллмана,
+                                позволяющий двум сторонам получить секретный ключ используя прослушиваемый канал связи.
+                                http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse10">
+                                Как создать секретный ключ.
+                            </a>
+                        </div>
+                        <div id="collapse10" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse11">
+                                Как зашифровать текст.
+                            </a>
+                        </div>
+                        <div id="collapse11" class="accordion-body collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse12">
+                                Как разшифровать текст.
+                            </a>
+                        </div>
+                        <div id="collapse12" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse13">
+                                Советы.
+                            </a>
+                        </div>
+                        <div id="collapse13" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse14">
+                                Узнать больше об используемых технологиях.
+                            </a>
+                        </div>
+                        <div id="collapse14" class="accordion-body in collapse" style="height: 0px;">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end accordion 2-->
+            </div>
+            <!--end tabe russhian-->
         </div>
-        <!--end tabe russhian-->
+
     </div>
+
+    <!--end how to-->
 
     <!--settings-->
 
-    <!--<div class="page-header">-->
-        <!--<h1>Secret key</h1>-->
-    <!--</div>-->
+    <div id="settings" class="none">
 
-    <!--<form>-->
-        <!--<fieldset>-->
-            <!--<label><i aria-hidden="true" class="icon-key-stroke"></i> Public key</label>-->
-            <!--<input name="public" type="text" placeholder="Type public key">-->
-            <!--<label><i class="icon-key-fill"></i>  Private key</label>-->
-            <!--<input name="private" type="password" placeholder="Type private key">-->
-            <!--<span class="help-block">The data is deleted when you close the browser window.</span>-->
-            <!--<button type="submit" class="btn btn-primary">Save changes</button>-->
-            <!--<button type="button" class="btn">Change</button>-->
-        <!--</fieldset>-->
-    <!--</form>-->
+        <div class="page-header">
+            <h1>Secret key</h1>
+        </div>
+
+        <form>
+            <fieldset>
+                <label><i aria-hidden="true" class="icon-key-stroke"></i> Public key</label>
+                <input name="public" type="text" placeholder="Type public key">
+                <label><i class="icon-key-fill"></i>  Private key</label>
+                <input name="private" type="password" placeholder="Type private key">
+                <span class="help-block">The data is deleted when you close the browser window.</span>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn">Change</button>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <!--end settings-->
 
     <!--go-->
-    <!--<div class="row-fluid">-->
-        <!--<div class="span5">-->
-            <!--<h2 data-value="crypto-text:">text:</h2>-->
-        <!--</div>-->
-        <!--<div class="span2">-->
-            <!--<div class="changeDirection">-->
-                <!--<div class="glyph">-->
-                    <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="span5">-->
-            <!--<h2 data-value="text:" class="align-right">crypto-text:</h2>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--</br>-->
-    <!--<div class="row-fluid">-->
-        <!--<div class="span6">-->
-            <!--<div class="wrapTextArea">-->
-                <!--<textarea id="left" placeholder="Enter here"></textarea>-->
-                 <!--<div class="tools">-->
-                    <!--<span data-id="left" data-action="get" rel="tooltip"  title="Get from clipboard"><i class="icon-download-3"></i></span>-->
-                    <!--<span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>-->
-                 <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="span6">-->
-            <!--<div class="wrapTextArea">-->
-                <!--<textarea id="right" placeholder="Copy to clipboard"></textarea>-->
-                <!--<div class="tools">-->
-                    <!--<span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload-5"></i></span>-->
-                    <!--<span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 
-    <!--start-->
+    <div id="go" class="none">
 
+        <div class="row-fluid">
+            <div class="span5">
+                <h2 data-value="crypto-text:">text:</h2>
+            </div>
+            <div class="span2">
+                <div class="changeDirection">
+                    <div class="glyph">
+                        <div class="fs1" aria-hidden="true" data-icon=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="span5">
+                <h2 data-value="text:" class="align-right">crypto-text:</h2>
+            </div>
+        </div>
+        </br>
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="wrapTextArea">
+                    <textarea id="left" placeholder="Enter here"></textarea>
+                     <div class="tools">
+                        <span data-id="left" data-action="get" rel="tooltip"  title="Get from clipboard"><i class="icon-download-3"></i></span>
+                        <span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                     </div>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="wrapTextArea">
+                    <textarea id="right" placeholder="Copy to clipboard"></textarea>
+                    <div class="tools">
+                        <span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload-5"></i></span>
+                        <span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--<div class="row-fluid">-->
-        <!--<div class="span12">-->
-            <!--<div class="metro wrapTile">-->
+    </div>
 
-                <!--<a class="tile square text tilesquareblock" data-href="main" href="#">-->
-                    <!--<div class="text-big">-->
-                        <!--<div class="glyph">-->
-                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<br/>-->
-                    <!--<div class="text">Start</div>-->
-                <!--</a>-->
-
-                <!--<a class="tile wide text bg-color-blueDark" data-href="main" href="#">-->
-                    <!--<div class="text-header">Welcome</div>-->
-                    <!--</br>-->
-                    <!--<div class="text">-->
-                        <!--FOG - application for privacy of your correspondence.-->
-                    <!--</div>-->
-                <!--</a>-->
-
-                <!--<a class="tile square text tilesquareblock" data-href="howTo" href="#">-->
-                    <!--<div class="text-big">-->
-                        <!--<div class="glyph">-->
-                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<br/>-->
-                    <!--<div class="text">How to</div>-->
-                <!--</a>-->
-                <!--<a class="tile square text tilesquareblock" data-href="settings" href="#">-->
-                    <!--<div class="text-big">-->
-                        <!--<div class="glyph">-->
-                            <!--&lt;!&ndash;<div class="fs1" aria-hidden="true" data-icon="j"></div>&ndash;&gt;-->
-                            <!--<div class="fs1" aria-hidden="true" data-icon="k"></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<br/>-->
-                    <!--<div class="text">Secret key</div>-->
-                <!--</a>-->
-                <!--<a class="tile square text tilesquareblock" data-href="go" href="#">-->
-                    <!--<div class="text-big">-->
-                        <!--<div class="glyph">-->
-                            <!--<div class="fs1" aria-hidden="true" data-icon=""></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<br/>-->
-                    <!--<div class="text"> Go</div>-->
-                <!--</a>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;end wrapTile&ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash;end span 12&ndash;&gt;-->
-    <!--</div>-->
+    <!--end go-->
 
 </div>
 
-<footer class="win-commandlayout navbar-fixed-bottom win-ui-dark">
+<footer class="win-commandlayout navbar-fixed-bottom win-ui-dark none">
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span6 align-left">
 
                 <hr class="win-command">
 
-                <button class="win-command">
+                <button class="win-command" data-href="start">
                     <span class="win-commandimage win-commandring"><i class="icon-home-4"></i></span>
                     <span class="win-label">Start</span>
                 </button>
 
-                <button class="win-command">
+                <button class="win-command" data-href="howTo">
                     <span class="win-commandimage win-commandring"><i class="icon-help-4"></i></span>
                     <span class="win-label">How to</span>
                 </button>
 
-                <button class="win-command">
+                <button class="win-command" data-href="settings">
                     <span class="win-commandimage win-commandring"><i class="icon-key-fill"></i></span>
                     <span class="win-label">Secret Key</span>
                 </button>
 
-                <button class="win-command">
+                <button class="win-command" data-href="go">
                     <span class="win-commandimage win-commandring"><i class="icon-arrow-right-7"></i></span>
                     <span class="win-label">Go</span>
                 </button>

@@ -2,6 +2,7 @@
 function init () {
 
     ui.context = document.querySelector( '#content' );
+    ui.footer = document.querySelector( 'footer' );
 
     var tiles = ui.context.querySelectorAll( "a.tile" );
     for ( var i = 0; i < tiles.length; i++ ) {
@@ -11,10 +12,18 @@ function init () {
         }
     }
 
-//    ui.context.querySelector("div.changeDirection").onclick = function (e) {
-//        ui.changeDirection();
-//        return false;
-//    };
+    var commandButton = ui.footer.querySelectorAll( "button" );
+    for ( var i = 0; i < commandButton.length; i++ ) {
+        commandButton[i].onclick = function ( e ) {
+            ui.control( this );
+            return false;
+        }
+    }
+
+    ui.context.querySelector("div.changeDirection").onclick = function (e) {
+        ui.changeDirection();
+        return false;
+    };
 
     var spans = ui.context.querySelectorAll( ".tools > span" );
     for ( var i = 0; i < spans.length; i++ ) {

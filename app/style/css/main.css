@@ -7,6 +7,10 @@ body{
     background-size: 120%;
 }
 
+.none{
+    display: none;
+}
+
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
