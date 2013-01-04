@@ -1,12 +1,20 @@
 /*
 go
 */
+.wrapTransformControl span{
+    margin-right: 15px;
+}
+
+.wrapTransformControl > button{
+    margin-left: 35px;
+}
 
 .changeDirection {
-    font-size: 40px;
+    font-size: 18px;
     text-align: center;
     padding-top: 10px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .wrapTextArea{

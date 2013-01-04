@@ -27,10 +27,10 @@
     <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
 
     <script src="app/js/templates.js"></script>
-    <script src="app/js/init.js"></script>
     <script src="app/js/util.js"></script>
     <script src="app/js/ui.js"></script>
     <script src="app/js/error.js"></script>
+    <script src="app/js/init.js"></script>
 
 </head>
 <body>
@@ -354,18 +354,16 @@
     <div id="go" class="none">
 
         <div class="row-fluid">
-            <div class="span5">
-                <h2 data-value="crypto-text:">text:</h2>
-            </div>
-            <div class="span2">
-                <div class="changeDirection">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon=""></div>
-                    </div>
+            <div class="span12">
+                <div class="wrapTransformControl">
+                    <span class="label" data-value="Crypto-text">Text</span>
+                    <span class="changeDirection">
+                        <span class="label label-important"><i class="icon-tab"></i> Change direction</span>
+                        <!--<button class="btn btn-mini btn-danger" type="button"><i class="icon-tab"></i> Change direction</button>-->
+                    </span>
+                    <span class="label" data-value="Text" >Crypto-text</span>
+                    <button id="transform" class="btn btn-mini btn-primary" type="button">Transform</button>
                 </div>
-            </div>
-            <div class="span5">
-                <h2 data-value="text:" class="align-right">crypto-text:</h2>
             </div>
         </div>
         </br>

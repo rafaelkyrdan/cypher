@@ -28,7 +28,7 @@ ui = {
     },
 
     changeDirection : function () {
-        var titles = ui.context.querySelectorAll( ".span5 > h2" );
+        var titles = ui.context.querySelectorAll( ".wrapTransformControl > span.label" );
 
         for ( var i = 0; i < titles.length; i++ ) {
             var currentValue = titles[i].innerText;
