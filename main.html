@@ -87,23 +87,57 @@
 </div>
 
 <script>
-    var x = 5;
-    var y = 6;
-    var b = 7;
-    //( (bx)y = (by)x = bxy)
-
-    document.write( ((b * x) * y) == ((b * y) * x));
-    document.write( ((b * y) * x) == (b * y * x));
-    document.write( ((b * x) * y) == (b * y * x));
+//    var x = 5;
+//    var y = 6;
+//    var b = 7;
+//    //( (bx)y = (by)x = bxy)
+//
+//    document.write( ((b * x) * y) == ((b * y) * x));
+//    document.write('<br/>');
+//    document.write( ((b * y) * x) == (b * y * x));
+//    document.write('<br/>');
+//    document.write( ((b * x) * y) == (b * y * x));
+//    document.write('<br/>');
 
     var g = 3;
-    var p = 7;
+    var p = 17;
 
-    var a = 12345678;
-    var bb = 87654321;
+    var alice = 54;
+    var bob = 24;
 
-     console.log( 5*5*5*5*5*5)
-    console.log((5*5*5*5*5*5)%23);
+    //var b = Math.pow(a, n);
+    var threePow54 = Math.pow(g, alice);
+    var threePow542 = g^alice;
+    var threePow543 = Math.exp(alice * Math.log(g));
+    var threePow24 = Math.pow(g, bob);
+
+    document.write('<br/>');
+    document.write("module - " + 46%12);
+    document.write('<br/>');
+    document.write("threePow54 - " + threePow54);
+    document.write('<br/>');
+    document.write("threePow542 - " + threePow542);
+    document.write('<br/>');
+    document.write("threePow543 - " + threePow543);
+    document.write('<br/>');
+    document.write("threePow24 - " + threePow24);
+    document.write('<br/>');
+    document.write('alice public - ' + threePow54%p);
+    document.write('<br/>');
+    document.write('alice public2 - ' + threePow54%p);
+    document.write('<br/>');
+    document.write('bob public - ' + threePow24%p);
+//    var fff = Math.pow(15, 24);
+//    var dd = 24+54;
+//    var f = Math.pow(3, dd);
+//    document.write("secret key - " + fff%17);
+//    document.write('<br/>');
+//    document.write("dd - " + dd);
+//    document.write('<br/>');
+//    document.write("secret key - " + f%17);
+//    document.write('<br/>');
+//    document.write('<br/>');
+//    document.write("pow - " + fff);
 </script>
 
 

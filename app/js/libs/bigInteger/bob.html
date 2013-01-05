@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bob</title>
+
+    <script language="JavaScript" type="text/javascript" src="jsbn.js"></script>
+    <script language="JavaScript" type="text/javascript" src="jsbn2.js"></script>
+    <script language="JavaScript" type="text/javascript" src="prng4.js"></script>
+    <script language="JavaScript" type="text/javascript" src="rng.js"></script>
+    <script language="JavaScript" type="text/javascript" src="ec.js"></script>
+    <script language="JavaScript" type="text/javascript" src="sec.js"></script>
+
+    <script>
+
+        var q, b, gx, gy, n;
+
+        function set_ec_params(name) {
+
+            var c = getSECCurveByName(name);
+
+            q = c.getCurve().getQ().toString();
+            a = c.getCurve().getA().toBigInteger().toString();
+            b = c.getCurve().getB().toBigInteger().toString();
+            gx = c.getG().getX().toBigInteger().toString();
+            gy = c.getG().getY().toBigInteger().toString();
+            n = c.getN().toString();
+        }
+
+
+        function set_secp160r1() {
+            set_ec_params("secp160r1");
+        }
+
+        var rng;
+
+        function do_init() {
+            set_secp160r1();
+            rng = new SecureRandom();
+        }
+
+        function get_curve() {
+            return new ECCurveFp(new BigInteger(q),
+                    new BigInteger(a),
+                    new BigInteger(b));
+        }
+
+        function get_G(curve) {
+            return new ECPointFp(curve,
+                    curve.fromBigInteger(new BigInteger(gx)),
+                    curve.fromBigInteger(new BigInteger(gy)));
+        }
+
+        function pick_rand() {
+            var n0 = new BigInteger(n);
+            var n1 = n0.subtract(BigInteger.ONE);
+            var r = new BigInteger(n0.bitLength(), rng);
+            return r.mod(n1).add(BigInteger.ONE);
+        }
+
+        function do_bob_rand() {
+            var r = pick_rand();
+            document.ecdhtest.bob_priv.value = r.toString();
+        }
+
+        function do_bob_pub() {
+            if(document.ecdhtest.bob_priv.value.length == 0) {
+                alert("Please generate Bob's private value first");
+                return;
+            }
+            var before = new Date();
+            var curve = get_curve();
+            var G = get_G(curve);
+            var a = new BigInteger(document.ecdhtest.bob_priv.value);
+            var P = G.multiply(a);
+            var after = new Date();
+            document.ecdhtest.bob_pub_x.value = P.getX().toBigInteger().toString();
+            document.ecdhtest.bob_pub_y.value = P.getY().toBigInteger().toString();
+        }
+
+        function do_bob_key() {
+            if(document.ecdhtest.bob_priv.value.length == 0) {
+                alert("Please generate Bob's private value first");
+                return;
+            }
+            if(document.ecdhtest.alice_pub_x.value.length == 0) {
+                alert("Please compute Alice's public value first");
+                return;
+            }
+            var before = new Date();
+            var curve = get_curve();
+            var P = new ECPointFp(curve,
+                    curve.fromBigInteger(new BigInteger(document.ecdhtest.alice_pub_x.value)),
+                    curve.fromBigInteger(new BigInteger(document.ecdhtest.alice_pub_y.value)));
+            var a = new BigInteger(document.ecdhtest.bob_priv.value);
+            var S = P.multiply(a);
+            var after = new Date();
+            document.ecdhtest.bob_key_x.value = S.getX().toBigInteger().toString();
+            document.ecdhtest.bob_key_y.value = S.getY().toBigInteger().toString();
+        }
+
+    </script>
+</head>
+<body onLoad='do_init();'>
+<h1>JavaScript ECDH Key Exchange Demo</h1>
+
+<form name="ecdhtest" onSubmit='return false;'>
+    <table>
+        <tr>
+            <td>
+                [Step 1] Bob's private value (<i>a</i>):<br>
+                <input name="bob_priv" type="text" value="" size=80><br>
+                <input type="button" value="random" onClick="do_bob_rand();"><p>
+                [Step 2] Bob's public point (<i>B = bG</i>) (X,Y):<br>
+                <input name="bob_pub_x" type="text" value="" size=80><br>
+                <input name="bob_pub_y" type="text" value="" size=80><br>
+                <input type="button" value="compute public" onClick="do_bob_pub();"><p>
+                [Step 3] Alice's public point (<i>A = aG</i>) (X,Y):<br>
+                <input name="alice_pub_x" type="text" value="" size=80><br>
+                <input name="alice_pub_y" type="text" value="" size=80><br>
+            </td>
+            <td>
+                [Step 4] Bob's secret key (<i>S = bA = baG</i>) (X,Y):<br>
+                <input name="bob_key_x" type="text" value="" size=80><br>
+                <input name="bob_key_y" type="text" value="" size=80><br>
+                <input type="button" value="derive secret" onClick="do_bob_key();">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
