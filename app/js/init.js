@@ -23,7 +23,6 @@ function init () {
     var buttons = ui.context.querySelectorAll( "table button" );
     for ( var i = 0; i < buttons.length; i++ ) {
         buttons[i].onclick = function ( e ) {
-            //ui.formControl( this );
             util.formControl( this );
             return false;
         };

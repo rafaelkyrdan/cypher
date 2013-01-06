@@ -343,7 +343,7 @@
                 <td>
                     <div class="control-group">
                         <div class="controls">
-                            <input class="span6" type="password" name="privateKey" placeholder="Click to generate button">
+                            <input class="span6" type="password" name="privateKey" placeholder="Click to generate button" disabled>
                         </div>
                     </div>
                     <button data-action="doRand" class="btn btn-success">Generate</button>
@@ -351,7 +351,7 @@
                 <td>
                     <div class="control-group">
                         <div class="controls">
-                            <input class="span6" type="text" name="publicKey" placeholder="Click to generate button">
+                            <input class="span6" type="text" name="publicKey" placeholder="Click to generate button" disabled>
                             <span class="help-block">After generate your public key you should send it your partner.</span>
                         </div>
                     </div>
@@ -367,7 +367,8 @@
                 <td>
                     <div class="control-group">
                         <div class="controls">
-                            <input class="span6" type="text" name="partnerKey" placeholder="Get from your partner">
+                            <input class="span6" type="text" name="partnerKey" disabled placeholder="Get from your partner">
+                            <span class="help-block">For insert data click to a button.</span>
                         </div>
                     </div>
                     <button data-action="getKey" class="btn btn-primary">Get from clipboard</button>
@@ -375,7 +376,7 @@
                 <td>
                     <div class="control-group">
                         <div class="controls">
-                            <input class="span6" type="text" name="secretKey" placeholder="Click to generate button">
+                            <input class="span6" type="text" name="secretKey" placeholder="Click to generate button" disabled>
                         </div>
                     </div>
                     <button data-action="doSecretKey" class="btn btn-success">Generate</button>

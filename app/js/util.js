@@ -97,7 +97,6 @@ util = {
         var r = util.pickRand();
         util.privateKey = r.toString();
         ui.context.querySelector( "input[name='privateKey']" ).value = r.toString();
-        ui.context.querySelector( "input[name='privateKey']" ).disabled = "disabled";
 
     },
 
@@ -118,7 +117,6 @@ util = {
         var value = P.getX().toBigInteger().toString() + ":" + P.getY().toBigInteger().toString();
         util.publicKey = value;
         ui.context.querySelector( "input[name='publicKey']" ).value =  value;
-        ui.context.querySelector( "input[name='publicKey']" ).disabled =  "disabled";
 
     },
 
@@ -132,7 +130,6 @@ util = {
 
         util.partnerKey = util.getFromClipBoard();
         ui.context.querySelector( "input[name='partnerKey']" ).value = util.partnerKey;
-        ui.context.querySelector( "input[name='partnerKey']" ).disabled = "disabled";
 
     },
 
@@ -143,13 +140,13 @@ util = {
             return;
         }
 
-        if( ui.context.querySelector( "input[name='partnerKey']" ).value.length == 0 ) {
+        if( util.partnerKey == "" ) {
             alert("Please compute Bob's public value first");
             return;
         }
 
         var curve = util.getCurve();
-        var partnerKey = ui.context.querySelector( "input[name='partnerKey']" ).value.split(":");
+        var partnerKey = util.partnerKey.split(":");
         var P = new ECPointFp(curve,
                         curve.fromBigInteger(new BigInteger( partnerKey[0] )),
                         curve.fromBigInteger(new BigInteger( partnerKey[1] )));
@@ -159,7 +156,7 @@ util = {
         var value = S.getX().toBigInteger().toString() + ':' + S.getY().toBigInteger().toString();
         util.encryptionKey = value;
         ui.context.querySelector( "input[name='secretKey']" ).value = value;
-        ui.context.querySelector( "input[name='secretKey']" ).disabled = "disabled";
+
     },
 
     set_ec_params : function ( name ) {
