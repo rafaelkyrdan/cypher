@@ -333,18 +333,56 @@
             <h1>Secret key</h1>
         </div>
 
-        <form>
-            <fieldset>
-                <label><i aria-hidden="true" class="icon-key-stroke"></i> Public key</label>
-                <input name="public" type="text" placeholder="Type public key">
-                <label><i class="icon-key-fill"></i>  Private key</label>
-                <input name="private" type="password" placeholder="Type private key">
-                <span class="help-block">The data is deleted when you close the browser window.</span>
-                <button type="submit" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn">Change</button>
-            </fieldset>
-        </form>
-
+        <table class="table">
+            <tbody>
+            <tr>
+                <td><h3>Step 1 Your private key</h3></td>
+                <td><h3>Step 2 Your public key</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input class="span6" type="password" name="privateKey" placeholder="Click to generate button">
+                        </div>
+                    </div>
+                    <button data-action="doRand" class="btn btn-success">Generate</button>
+                </td>
+                <td>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input class="span6" type="text" name="publicKey" placeholder="Click to generate button">
+                            <span class="help-block">After generate your public key you should send it your partner.</span>
+                        </div>
+                    </div>
+                    <button data-action="doPublicKey" class="btn btn-success">Generate</button>
+                    <button data-action="copyKey" class="btn btn-primary">Copy to clipboard</button>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>Step 3 Public key your partner</h3></td>
+                <td><h3>Step 4 Your secret key</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input class="span6" type="text" name="partnerKey" placeholder="Get from your partner">
+                        </div>
+                    </div>
+                    <button data-action="getKey" class="btn btn-primary">Get from clipboard</button>
+                </td>
+                <td>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input class="span6" type="text" name="secretKey" placeholder="Click to generate button">
+                        </div>
+                    </div>
+                    <button data-action="doSecretKey" class="btn btn-success">Generate</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <!--end settings-->
@@ -440,6 +478,13 @@
 <script type="text/javascript">
     $(".metro").metro();
 </script>
+
+<script type="text/javascript" src="app/bigInteger/jsbn.js"></script>
+<script type="text/javascript" src="app/bigInteger/jsbn2.js"></script>
+<script type="text/javascript" src="app/bigInteger/prng4.js"></script>
+<script type="text/javascript" src="app/bigInteger/rng.js"></script>
+<script type="text/javascript" src="app/bigInteger/ec.js"></script>
+<script type="text/javascript" src="app/bigInteger/sec.js"></script>
 
 </body>
 </html>

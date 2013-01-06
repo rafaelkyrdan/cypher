@@ -37,13 +37,14 @@ ui = {
         }
     },
 
-    manageText : function (obj) {
+    manageText : function ( obj ) {
+
         var textArea = ui.context.querySelector( "#" + obj.dataset.id );
         var action = obj.dataset.action;
 
         switch ( action ) {
             case "get" :
-                util.getFromClipBoard();
+                util.getText();
                 break;
             case "copy" :
                 util.copyToClipBoard( textArea.value );
@@ -60,30 +61,44 @@ ui = {
 
     formControl : function ( obj ) {
 
-        var inputFields = ui.context.querySelectorAll( "form input" );
+        w(obj)
 
-        if ( obj.type == "submit" ) {
-
-            var arr = [];
-
-            for ( var i = 0; i < inputFields.length; i++ ) {
-
-                arr.push(inputFields[i].value);
-                inputFields[i].disabled = true;
-
-            }
-
-            util.saveToStorage(arr);
-
-        } else {
-
-            for ( var i = 0; i < inputFields.length; i++ ) {
-
-                inputFields[i].disabled = false;
-
-            }
-        }
+//        var inputFields = ui.context.querySelectorAll( "form input" );
+//
+//        if ( obj.type == "submit" ) {
+//
+//            var arr = [];
+//
+//            for ( var i = 0; i < inputFields.length; i++ ) {
+//
+//                arr.push(inputFields[i].value);
+//                inputFields[i].disabled = true;
+//
+//            }
+//
+//            util.saveToStorage(arr);
+//
+//        } else {
+//
+//            for ( var i = 0; i < inputFields.length; i++ ) {
+//
+//                inputFields[i].disabled = false;
+//
+//            }
+//        }
     },
+
+    showAlert : function ( obj ) {
+        w(obj);
+
+        var tmp = '<div class="alert">' +
+                        '<button type="button" class="close" data-dismiss="alert"></button>' +
+                        '<strong>Warning!</strong>' + obj.value +
+                  '</div>';
+
+        ui.context.innerHTML += tmp;
+    },
+
 
     addClass : function( elem, clazz ) {
 
@@ -104,6 +119,7 @@ ui = {
         }
 
     },
+
 
     removeClass : function (elem, clazz) {
 
