@@ -13,13 +13,13 @@
         "frame" : true,
         "show" : false,
         "toolbar": true,
-        "width": 800,
-        "height": 500,
+        "width": 1000,
+        "height": 600,
         "position": "center",
-        "min_width": 400,
-        "min_height": 200,
-        "max_width": 800,
-        "max_height": 750
+        "min_width": 1000,
+        "min_height": 600,
+        "max_width": 1000,
+        "max_height": 600
     },
     "webkit": {
         "plugin": false,

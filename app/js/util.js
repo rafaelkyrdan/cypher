@@ -1,3 +1,4 @@
+
 util = {
 
     currentAllow : "crypto",
@@ -12,20 +13,51 @@ util = {
     partnerKey : '',
     encryptionKey : '',
 
+    checkKey : function () {
+
+        if ( ui.currentPage == "go" && util.encryptionKey == "" ) {
+
+            ui.showAlert( "First, you need to create a secret key." );
+
+            setTimeout( function () {
+                ui.clearErrorMessage();
+            }, 3000);
+
+
+        } else if ( ui.currentPage == "settings" && util.encryptionKey != "" ) {
+
+            ui.showAlert( "You have secret key. Do you want change it?" );
+
+            setTimeout( function () {
+                ui.clearErrorMessage();
+            }, 3000);
+
+
+        }
+    },
+
     changeDirection : function () {
+
         util.currentAllow = ( util.currentAllow == "crypto" ) ?  "text" : "crypto";
+
     },
 
     getText : function () {
+
         ui.context.querySelector( "#left" ).value = util.getFromClipBoard();
+
     },
 
     copyToClipBoard : function ( msg ) {
+
         clipboard.set( msg, 'text' );
+
     },
 
     getFromClipBoard : function () {
+
         return clipboard.get( 'text' );
+
     },
 
     transform : function () {
@@ -34,17 +66,17 @@ util = {
 
         if ( util.currentAllow == "crypto" ) {
 
-            util.chiper( val )
+            util.cipher( val )
 
         } else {
 
-            util.dechiper( val );
+            util.decipher( val );
 
         }
 
     },
 
-    chiper : function ( txt ) {
+    cipher : function ( txt ) {
 
         var cipher = require( "crypto" ).createCipher( 'des-ede3-cbc', util.encryptionKey );
         var ciph = cipher.update( txt, 'utf8', 'hex' );
@@ -53,7 +85,7 @@ util = {
 
     },
 
-    dechiper : function ( ciph ) {
+    decipher : function ( ciph ) {
 
         var decipher = require( "crypto" ).createDecipher( 'des-ede3-cbc', util.encryptionKey );
         var txt = decipher.update( ciph, 'hex', 'utf8' );
@@ -104,9 +136,10 @@ util = {
     doPublicKey : function () {
 
         if ( util.privateKey == "" ) {
-            alert( "Please generate Alice's private value first" );
-            //ui.showAlert( { id : "content", value : "Please generate private value first"} );
+
+            ui.showAlert( "Please generate private value first" );
             return;
+
         }
 
         var curve = util.getCurve();
@@ -136,13 +169,17 @@ util = {
     doSecretKey : function() {
 
         if( util.privateKey == "" ) {
-            alert("Please generate Alice's private value first");
+
+            ui.showAlert( "Please generate private value first" );
             return;
+
         }
 
         if( util.partnerKey == "" ) {
-            alert("Please compute Bob's public value first");
+
+            ui.showAlert("Please get partner's public value first");
             return;
+
         }
 
         var curve = util.getCurve();
@@ -156,6 +193,12 @@ util = {
         var value = S.getX().toBigInteger().toString() + ':' + S.getY().toBigInteger().toString();
         util.encryptionKey = value;
         ui.context.querySelector( "input[name='secretKey']" ).value = value;
+
+        ui.showSuccessMessage("Уou are created secure key, now you can encrypt your message.");
+
+        setTimeout( function () {
+            ui.clearErrorMessage();
+        }, 3000);
 
     },
 

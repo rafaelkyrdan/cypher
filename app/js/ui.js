@@ -24,6 +24,7 @@ ui = {
 
             ui.removeClass( ui.context.querySelector( "#" + action ), "none" );
             ui.currentPage = action;
+            util.checkKey();
         }
     },
 
@@ -59,44 +60,28 @@ ui = {
 
     },
 
-    formControl : function ( obj ) {
-
-        w(obj)
-
-//        var inputFields = ui.context.querySelectorAll( "form input" );
-//
-//        if ( obj.type == "submit" ) {
-//
-//            var arr = [];
-//
-//            for ( var i = 0; i < inputFields.length; i++ ) {
-//
-//                arr.push(inputFields[i].value);
-//                inputFields[i].disabled = true;
-//
-//            }
-//
-//            util.saveToStorage(arr);
-//
-//        } else {
-//
-//            for ( var i = 0; i < inputFields.length; i++ ) {
-//
-//                inputFields[i].disabled = false;
-//
-//            }
-//        }
-    },
-
-    showAlert : function ( obj ) {
-        w(obj);
+    showAlert : function ( str ) {
 
         var tmp = '<div class="alert">' +
-                        '<button type="button" class="close" data-dismiss="alert"></button>' +
-                        '<strong>Warning!</strong>' + obj.value +
+                        '<i class="close"  onclick="ui.clearErrorMessage()"></i>' +
+                        '<strong>Warning! </strong>' + str +
                   '</div>';
 
-        ui.context.innerHTML += tmp;
+        ui.context.querySelector(".errorMessage").innerHTML = tmp;
+    },
+
+    showSuccessMessage : function ( str ) {
+
+        var tmp = '<div class="alert alert-success">' +
+            '<i class="close"  onclick="ui.clearErrorMessage()"></i>' +
+            '<strong>Warning! </strong>' + str +
+            '</div>';
+
+        ui.context.querySelector(".errorMessage").innerHTML = tmp;
+    },
+
+    clearErrorMessage : function () {
+        ui.context.querySelector(".errorMessage").innerHTML = "";
     },
 
 

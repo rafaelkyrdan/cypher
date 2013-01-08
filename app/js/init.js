@@ -48,7 +48,6 @@ function init () {
         return false;
 
     };
-
 }
 
 window.onload = init;
