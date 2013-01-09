@@ -48,17 +48,24 @@ function init () {
         return false;
 
     };
+
+    ui.context.querySelector( ".closeWindow" ).onclick = function ( e ) {
+
+        win.close();
+        return false;
+
+    };
 }
 
 window.onload = init;
 
-// Load native UI library
+
 var gui = require( 'nw.gui' );
-// We can not create a clipboard, we have to receive the system clipboard
+
 var clipboard = gui.Clipboard.get();
 var win = gui.Window.get();
 
-// Listen to the minimize event
+
 win.on( 'loaded', function() {
     gui.Window.get().show();
 });
@@ -66,3 +73,4 @@ win.on( 'loaded', function() {
 function w ( a,b,c,d ) {
      console.log( a,b,c,d );
 }
+

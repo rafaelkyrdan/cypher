@@ -17,11 +17,11 @@
     <link rel="stylesheet" type="text/css" href="app/bootmetro/content/css/icomoon.css">
 
 
-    <link rel="stylesheet" type="text/css" href="app/style/css/main.css">
-    <link rel="stylesheet" type="text/css" href="app/style/css/start.css">
-    <link rel="stylesheet" type="text/css" href="app/style/css/go.css">
-    <link rel="stylesheet" type="text/css" href="app/style/css/settings">
-    <link rel="stylesheet" type="text/css" href="app/style/css/howTo.css">
+    <link rel="stylesheet" type="text/css" href="app/css/main.css">
+    <link rel="stylesheet" type="text/css" href="app/css/start.css">
+    <link rel="stylesheet" type="text/css" href="app/css/go.css">
+    <link rel="stylesheet" type="text/css" href="app/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="app/css/howTo.css">
 
     <script src="app/js/libs/modernizr-2.6.1.min.js"></script>
     <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
@@ -37,7 +37,16 @@
 
 <div id="content" class="container-fluid">
 
-    <div class="errorMessage"></div>
+    <span class="closeWindow" rel="tooltip"  title="Close application">
+        <div class="glyph">
+            <div class="fs1" aria-hidden="true" data-icon=""></div>
+        </div>
+    </span>
+
+
+    <div class="errorMessage">
+
+    </div>
 
 
     <!--start-->
@@ -417,7 +426,7 @@
                     <textarea id="left" placeholder="Enter here"></textarea>
                      <div class="tools">
                         <span data-id="left" data-action="get" rel="tooltip"  title="Get from clipboard"><i class="icon-download-3"></i></span>
-                        <span data-id="left" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                        <span data-id="left" data-action="remove" rel="tooltip"  title="Delete all"><i class="icon-remove"></i></span>
                      </div>
                 </div>
             </div>
@@ -426,7 +435,7 @@
                     <textarea id="right" placeholder="Copy to clipboard"></textarea>
                     <div class="tools">
                         <span data-id="right" data-action="copy" rel="tooltip"  title="Copy to clipboard"><i class="icon-upload-5"></i></span>
-                        <span data-id="right" data-action="remove" rel="tooltip"  title="Delete selected"><i class="icon-remove"></i></span>
+                        <span data-id="right" data-action="remove" rel="tooltip"  title="Delete all"><i class="icon-remove"></i></span>
                     </div>
                 </div>
             </div>

@@ -34,5 +34,18 @@ body{
     background: #8a2be2;
 }
 
+.closeWindow {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.errorMessage {
+    position: absolute;
+    top: 10px;
+    height: 38px;
+}
+
 
 

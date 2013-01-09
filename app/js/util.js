@@ -44,7 +44,7 @@ util = {
 
     getText : function () {
 
-        ui.context.querySelector( "#left" ).value = util.getFromClipBoard();
+        ui.context.querySelector( "#left" ).value = util.trim( util.getFromClipBoard() );
 
     },
 
@@ -59,6 +59,11 @@ util = {
         return clipboard.get( 'text' );
 
     },
+
+    trim  : function( str ){
+        return str.replace(/^\s*|\s*$/g,"");
+    },
+
 
     transform : function () {
 
@@ -161,7 +166,7 @@ util = {
 
     getKey : function () {
 
-        util.partnerKey = util.getFromClipBoard();
+        util.partnerKey = util.trim( util.getFromClipBoard() );
         ui.context.querySelector( "input[name='partnerKey']" ).value = util.partnerKey;
 
     },

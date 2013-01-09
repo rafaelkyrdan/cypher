@@ -8,7 +8,7 @@
     "repositories": [{"type": "git", "url": "http://github.com/rafaelkyrdan", "path": ""}],
     "window": {
         "title" : "Туман",
-        "as_desktop" : true,
+        "as_desktop" : false,
         "resizable" : true,
         "always-on-top" : false,
         "fullscreen" : false,

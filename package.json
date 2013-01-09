@@ -7,23 +7,26 @@
         "icon": "app/img/label.png",
         "as_desktop" : false,
         "resizable" : true,
-        "always-on-top" : false,
+        "always-on-top" : true,
         "fullscreen" : false,
         "kiosk" : false,
         "frame" : true,
         "show" : false,
-        "toolbar": true,
+        "toolbar": false,
         "width": 1000,
-        "height": 600,
+        "height": 620,
         "position": "center",
         "min_width": 1000,
-        "min_height": 600,
+        "min_height": 620,
         "max_width": 1000,
-        "max_height": 600
+        "max_height": 620
     },
     "webkit": {
         "plugin": false,
         "java" : false,
         "page-cache" : false
-    }
+    },
+    "nodejs" : true,
+    "node-main" : "" ,
+    "single-instance" : false
 }
