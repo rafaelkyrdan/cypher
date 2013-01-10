@@ -5,7 +5,7 @@
     "window": {
         "title" : "Cypher",
         "icon": "app/img/label.png",
-        "as_desktop" : false,
+        "as_desktop" : true,
         "resizable" : true,
         "always-on-top" : true,
         "fullscreen" : false,
