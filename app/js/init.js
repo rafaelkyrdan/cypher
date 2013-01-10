@@ -52,6 +52,7 @@ function init () {
     ui.context.querySelector( ".closeWindow" ).onclick = function ( e ) {
 
         win.close();
+        //e.preventDefault();
         return false;
 
     };
