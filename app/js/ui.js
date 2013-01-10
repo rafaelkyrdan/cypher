@@ -63,7 +63,7 @@ ui = {
     showAlert : function ( str ) {
 
         var tmp = '<div class="alert">' +
-                        '<i class="close"  onclick="ui.clearErrorMessage()"></i>' +
+                        '<i class="close"  onclick="ui.clearMessage()"></i>' +
                         '<strong>Warning! </strong>' + str +
                   '</div>';
 
@@ -73,14 +73,14 @@ ui = {
     showSuccessMessage : function ( str ) {
 
         var tmp = '<div class="alert alert-success">' +
-            '<i class="close"  onclick="ui.clearErrorMessage()"></i>' +
+            '<i class="close"  onclick="ui.clearMessage()"></i>' +
             '<strong>Warning! </strong>' + str +
             '</div>';
 
         ui.context.querySelector(".errorMessage").innerHTML = tmp;
     },
 
-    clearErrorMessage : function () {
+    clearMessage : function () {
         ui.context.querySelector(".errorMessage").innerHTML = "";
     },
 

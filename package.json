@@ -1,9 +1,9 @@
 {
     "main": "index.html",
-    "name": "fogss",
+    "name": "cypher",
     "version": "0.1",
     "window": {
-        "title" : "Туман",
+        "title" : "Cypher",
         "icon": "app/img/label.png",
         "as_desktop" : false,
         "resizable" : true,

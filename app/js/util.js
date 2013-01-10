@@ -20,7 +20,7 @@ util = {
             ui.showAlert( "First, you need to create a secret key." );
 
             setTimeout( function () {
-                ui.clearErrorMessage();
+                ui.clearMessage();
             }, 3000);
 
 
@@ -29,7 +29,7 @@ util = {
             ui.showAlert( "You have secret key. Do you want change it?" );
 
             setTimeout( function () {
-                ui.clearErrorMessage();
+                ui.clearMessage();
             }, 3000);
 
 
@@ -202,7 +202,7 @@ util = {
         ui.showSuccessMessage("Уou are created secure key, now you can encrypt your message.");
 
         setTimeout( function () {
-            ui.clearErrorMessage();
+            ui.clearMessage();
         }, 3000);
 
     },
