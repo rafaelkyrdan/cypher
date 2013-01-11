@@ -2,7 +2,7 @@
 
 ##English
 
-About Application
+*About Application*
 
 The problem of preserving private data is now more than ever.
 Every day you exchange information, communicate and receive information.
@@ -15,23 +15,23 @@ Simple and clear description of how the algorithm allows
 the two sides to get secret key using a listening channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
-How to install?
+*How to install?*
 
-Windows
-
-
-Mac
+**Windows**
 
 
-Linux
+**Mac**
 
-Why cypher?
+
+**Linux**
+
+*Why cypher?*
 
 Cypher does not transmit the secret key. Cypher not Use Internet connection.
 Cypher does not store the keys, when you turn off the application keys are removed. For each session
 uses new keys.
 
-How to create secret key?
+*How to create secret key?*
 
 Go to the tab "secret key". You should follow the instructions step by step. Important:
 after the generation of public key you should send it to your partner. The third step:
@@ -40,13 +40,13 @@ begin to encrypt his data. Simple and clear description of how
 the algorithm allows the two sides to get secret key using a listening channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
-How to create crypto-text?
+*How to create crypto-text?*
 
 Make sure you and your partner have a shared secret key. Go to the tab "go".
 Insert a text to the left text box and click "transform".
 For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
 
-How to decrypt text?
+*How to decrypt text?*
 
 Make sure you and your partner have a shared secret key.
 Go to the tab "go". If it is necessary to change the direction
@@ -54,7 +54,7 @@ of the encryption/defifrovaniya. Insert the encrypted text
 to the right text box and click "transform". In the right box should appear text.
 If  it is not readable, then you and your partner used a different secret keys.
 
-Licence
+*Licence*
 
 Read the text of licence.
 
@@ -74,13 +74,13 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 *Как установить?*
 
-Windows
+**Windows**
 
 
-Mac
+**Mac**
 
 
-Linux
+**Linux**
 
 Вы можете скачать готовое приложение по ссылке:
 
