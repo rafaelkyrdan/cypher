@@ -92,17 +92,15 @@ Linux
 проэкт node-webkit https://github.com/rogerwang/node-webkit
 и вот такие команды:
 
-1. Go to your project directory a la cd ~/Projects/my_app
-2. Run zip -r ../${PWD##*/}.nw *
-3. Your fully-prepared .nw file shall be located right outside of your project directory
-4.
-5. Run ./nw app.nw
+1. Перейдите в папку проэкта a la cd ~/Projects/my_app
+2. Выполните zip -r ../${PWD##*/}.nw *
+3. Теперь во внешней директории у вас появился в файл с расширением.nw
+4. Переместите его в папку где находится node-webkit
+5. Выполните ./nw app.nw
 
-Making an executable file out of a .nw file
+Для создания исполняемого файла с .nw файла выполните
 
 1. cat /usr/bin/nw app.nw > app && chmod +x app
-
-
 
 
 Почему Cypher?
