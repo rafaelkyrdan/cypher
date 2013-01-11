@@ -84,13 +84,8 @@ Linux
 
 Вы можете скачать готовое приложение по ссылке:
 
-https://www.dropbox.com/s/38l179bvy55663j/cypher
-
-Это простая [ссылка](https://www.dropbox.com/s/38l179bvy55663j/cypher) в тексте.
-
-Это простая [https://www.dropbox.com/s/38l179bvy55663j/cypher](http://rukeba.com/) в тексте.
-
-
+Версии:
+1.[0.1](https://www.dropbox.com/s/38l179bvy55663j/cypher)
 
 или собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
 проэкт node-webkit https://github.com/rogerwang/node-webkit
