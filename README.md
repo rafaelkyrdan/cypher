@@ -32,7 +32,7 @@ You can download application on the url.
 
 Versions:
 
-[0.1](https://www.dropbox.com/s/38l179bvy55663j/cypher)
+[0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 or create application from source (for advanced users). You should download
 project node-webkit https://github.com/rogerwang/node-webkit
@@ -114,7 +114,7 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 Версии:
 
-[0.1](https://www.dropbox.com/s/38l179bvy55663j/cypher)
+[0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 
 или собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
