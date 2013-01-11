@@ -25,6 +25,31 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 **Linux**
 
+You can download application on the url.
+
+1. Unzip the application.
+2. Run the file cypher. Do not delete file nw.pak , it is part of application.
+
+Versions:
+
+[0.1](https://www.dropbox.com/s/38l179bvy55663j/cypher)
+
+or create application from source (for advanced users). You should download
+project node-webkit https://github.com/rogerwang/node-webkit
+There are some commands for console.
+
+
+1. Go to your project directory a la cd ~/Projects/my_app
+2. Run zip -r ../${PWD##*/}.nw *
+3. Your fully-prepared .nw file shall be located right outside of your project directory
+4. Move it to directory of node-webkit project.
+5. Run ./nw app.nw
+
+Making an executable file out of a .nw file
+
+1. cat /usr/bin/nw app.nw > app && chmod +x app
+
+
 *Why cypher?*
 
 Cypher does not transmit the secret key. Cypher not Use Internet connection.
@@ -82,11 +107,15 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 **Linux**
 
-Вы можете скачать готовое приложение по ссылке:
+Вы можете скачать готовое приложение по ссылке.
+
+1.Разархивируйте приложение. Перенесите папку в вашу директорию
+2.Запустите файл cypher. Не удаляйте файл nw.pak он является частью приложения.
 
 Версии:
 
 [0.1](https://www.dropbox.com/s/38l179bvy55663j/cypher)
+
 
 или собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
 проэкт node-webkit https://github.com/rogerwang/node-webkit
