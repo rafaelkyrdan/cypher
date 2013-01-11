@@ -82,6 +82,30 @@ Mac
 
 Linux
 
+Вы можете скачать готовое приложение по ссылке:
+
+https://www.dropbox.com/s/38l179bvy55663j/cypher
+
+Это простая [ссылка](https://www.dropbox.com/s/38l179bvy55663j/cypher) в тексте.
+
+Это простая [https://www.dropbox.com/s/38l179bvy55663j/cypher](http://rukeba.com/) в тексте.
+
+
+
+или собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
+проэкт node-webkit https://github.com/rogerwang/node-webkit
+и вот такие команды:
+
+1. Go to your project directory a la cd ~/Projects/my_app
+2. Run zip -r ../${PWD##*/}.nw *
+3. Your fully-prepared .nw file shall be located right outside of your project directory
+4.
+5. Run ./nw app.nw
+
+Making an executable file out of a .nw file
+
+1. cat /usr/bin/nw app.nw > app && chmod +x app
+
 
 
 
