@@ -51,6 +51,8 @@ function init () {
 
     ui.context.querySelector( ".closeWindow" ).onclick = function ( e ) {
 
+        w("click", e);
+
         win.close();
         //e.preventDefault();
         return false;
@@ -61,11 +63,11 @@ function init () {
 window.onload = init;
 
 
+
 var gui = require( 'nw.gui' );
 
 var clipboard = gui.Clipboard.get();
 var win = gui.Window.get();
-
 
 win.on( 'loaded', function() {
     gui.Window.get().show();

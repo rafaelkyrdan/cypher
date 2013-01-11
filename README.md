@@ -25,7 +25,7 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 **Linux**
 
-You can download application on the url.
+You can download application.
 
 1. Unzip the application.
 2. Run the file cypher. Do not delete file nw.pak , it is part of application.
@@ -35,7 +35,7 @@ Versions:
 [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 or create application from source (for advanced users). You should download
-project node-webkit https://github.com/rogerwang/node-webkit
+project node-webkit https://github.com/rogerwang/node-webkit .
 There are some commands for console.
 
 
@@ -107,7 +107,7 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 **Linux**
 
-Вы можете скачать готовое приложение по ссылке.
+Вы можете скачать готовое приложение.
 
 1.Разархивируйте приложение. Перенесите папку в вашу директорию
 2.Запустите файл cypher. Не удаляйте файл nw.pak он является частью приложения.
