@@ -12,6 +12,7 @@ your Internet service provider has access to everything that you send and receiv
 Cypher uses modern mechanism for encrypt data and does not send secret key.
 Simple and clear description of how the algorithm allows the two sides
 to get secret key using a listening channel.
+http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 *How to install?*
 
@@ -19,6 +20,7 @@ to get secret key using a listening channel.
 
 
 **Mac**
+
 coming soon
 
 **Linux**
@@ -59,9 +61,10 @@ uses new keys.
 Go to the tab "secret key". You should follow the instructions step by step. Important:
 after the generation public key you should  send it to your partner. The third step:
 you should obtain the public key your partner. After creating a secret key you can
-begin to encrypt his data. Simple and clear description of how
+begin to encrypt. Simple and clear description of how
 the algorithm allows the two sides to get secret key using a listening channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
+
 
 *How to create crypto-text?*
 
@@ -71,7 +74,6 @@ For copy to clipboard click to the button "copy to clipboard". And send it to yo
 
 *How to decrypt text?*
 
-Make sure you and your partner have a shared secret key.
 Go to the tab "cypher". If it is necessary to change the direction
 of the encryption/decryption. Insert the encrypted text
 to the left text box and click "transform". In the right box should appear text.
@@ -89,8 +91,7 @@ Read the text of licence.
 Существует множество способов зашифровать сообщение, но проблема в том,
 что ключ для шифрования нужно сообщить вашему собеседнику. Допустим ваш канал прослушивают,
 скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
-Cypher использует современные механизмы для шифрования (такие же как в банковской системе)
-и не передает секретный ключ по открытым каналам.
+Cypher использует современные механизмы для шифрования и не передает секретный ключ по открытым каналам.
 Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
 секретный ключ используя прослушиваемый канал связи.
 http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
@@ -108,7 +109,7 @@ coming soon
 
 Вы можете скачать готовое приложение.
 
-1.Разархивируйте приложение. Перенесите папку в вашу директорию
+1.Разархивируйте приложение.
 2.Запустите файл cypher. Не удаляйте файл nw.pak он является частью приложения.
 
 Версии:
@@ -151,14 +152,14 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 *Как зашифровать текст?*
 
-Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "go".
-Если необходимо измените направление шифрования/дефифрования. Вставьте в левое поле текст и
+Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
+Если необходимо измените направление шифрования/дешифрования. Вставьте в левое поле текст и
 нажмите кнопку "transform". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
 И отправьте его вашему партнеру.
 
 *Как разшифровать текст?*
 
-Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "go".
+Пройдите во вкладку "cypher".
 Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
 текст и нажмите кнопку "transform". В правом поле должен появиться тест. Если текст не
 читабельный значит вы и ваш партнер используете разные секретные ключи.
