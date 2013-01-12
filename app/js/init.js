@@ -1,68 +1,63 @@
 
 function init () {
 
-    ui.context = document.querySelector( '#content' );
-    ui.footer = document.querySelector( 'footer' );
+    appUI.context = document.querySelector( '#content' );
+    appUI.footer = document.querySelector( 'footer' );
 
-    var tiles = ui.context.querySelectorAll( "a.tile" );
+    var tiles = appUI.context.querySelectorAll( "a.tile" );
     for ( var i = 0; i < tiles.length; i++ ) {
         tiles[i].onclick = function ( e ) {
-            ui.control( this );
+            appUI.control( this );
             return false;
         };
     }
 
-    var commandButton = ui.footer.querySelectorAll( "button" );
+    var commandButton = appUI.footer.querySelectorAll( "button" );
     for ( var i = 0; i < commandButton.length; i++ ) {
         commandButton[i].onclick = function ( e ) {
-            ui.control( this );
+            appUI.control( this );
             return false;
         };
     }
 
-    var buttons = ui.context.querySelectorAll( "table button" );
+    var buttons = appUI.context.querySelectorAll( "table button" );
     for ( var i = 0; i < buttons.length; i++ ) {
         buttons[i].onclick = function ( e ) {
-            util.formControl( this );
+            app.formControl( this );
             return false;
         };
     }
 
-    ui.context.querySelector( "span.changeDirection" ).onclick = function ( e ) {
-        ui.changeDirection();
-        util.changeDirection();
+    appUI.context.querySelector( "#changeDirection" ).onclick = function ( e ) {
+        appUI.changeDirection();
+        app.changeDirection();
         return false;
     };
 
-    var spans = ui.context.querySelectorAll( ".tools > span" );
+    var spans = appUI.context.querySelectorAll( ".tools > span" );
     for ( var i = 0; i < spans.length; i++ ) {
         spans[i].onclick = function ( e ) {
-            ui.manageText( this );
+            appUI.manageText( this );
             return false;
         };
     }
 
-    ui.context.querySelector( "#transform" ).onclick = function ( e ) {
+    appUI.context.querySelector( "#transform" ).onclick = function ( e ) {
 
-        util.transform();
+        app.transform();
         return false;
 
     };
 
-    ui.context.querySelector( ".closeWindow" ).onclick = function ( e ) {
-
-        w("click", e);
+    appUI.context.querySelector( ".closeWindow" ).onclick = function ( e ) {
 
         win.close();
-        //e.preventDefault();
         return false;
 
     };
 }
 
 window.onload = init;
-
-
 
 var gui = require( 'nw.gui' );
 

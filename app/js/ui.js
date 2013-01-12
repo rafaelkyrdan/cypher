@@ -1,4 +1,4 @@
-ui = {
+appUI = {
 
     context : "",
     footer : "",
@@ -8,28 +8,28 @@ ui = {
 
         var action = obj.dataset.href;
 
-        if ( action != ui.currentPage ) {
+        if ( action != appUI.currentPage ) {
 
-            ui.addClass( ui.context.querySelector( "#" + ui.currentPage ), "none");
+            appUI.addClass( appUI.context.querySelector( "#" + appUI.currentPage ), "none");
 
             if( action == "start" ){
 
-                ui.addClass( ui.footer, "none" );
+                appUI.addClass( appUI.footer, "none" );
 
             } else {
 
-                ui.removeClass( ui.footer, "none" );
+                appUI.removeClass( appUI.footer, "none" );
 
             }
 
-            ui.removeClass( ui.context.querySelector( "#" + action ), "none" );
-            ui.currentPage = action;
-            util.checkKey();
+            appUI.removeClass( appUI.context.querySelector( "#" + action ), "none" );
+            appUI.currentPage = action;
+            app.checkKey();
         }
     },
 
     changeDirection : function () {
-        var titles = ui.context.querySelectorAll( ".wrapTransformControl > span.label" );
+        var titles = appUI.context.querySelectorAll( ".span6 > span.label" );
 
         for ( var i = 0; i < titles.length; i++ ) {
             var currentValue = titles[i].innerText;
@@ -40,21 +40,21 @@ ui = {
 
     manageText : function ( obj ) {
 
-        var textArea = ui.context.querySelector( "#" + obj.dataset.id );
+        var textArea = appUI.context.querySelector( "#" + obj.dataset.id );
         var action = obj.dataset.action;
 
         switch ( action ) {
             case "get" :
-                util.getText();
+                app.getText();
                 break;
             case "copy" :
-                util.copyToClipBoard( textArea.value );
+                app.copyToClipBoard( textArea.value );
                 break;
             case "remove" :
                 textArea.value = "";
                 break;
             default:
-                errorHandler.toLog( { msg: "Incorrect action" + action, obj: "ui", method: "manageText" } );
+                errorHandler.toLog( { msg: "Incorrect action" + action, obj: "appUI", method: "manageText" } );
                 break;
         }
 
@@ -63,25 +63,25 @@ ui = {
     showAlert : function ( str ) {
 
         var tmp = '<div class="alert">' +
-                        '<i class="close"  onclick="ui.clearMessage()"></i>' +
+                        '<i class="close"  onclick="appUI.clearMessage()"></i>' +
                         '<strong>Warning! </strong>' + str +
                   '</div>';
 
-        ui.context.querySelector(".errorMessage").innerHTML = tmp;
+        appUI.context.querySelector(".errorMessage").innerHTML = tmp;
     },
 
     showSuccessMessage : function ( str ) {
 
         var tmp = '<div class="alert alert-success">' +
-            '<i class="close"  onclick="ui.clearMessage()"></i>' +
+            '<i class="close"  onclick="appUI.clearMessage()"></i>' +
             '<strong>Warning! </strong>' + str +
             '</div>';
 
-        ui.context.querySelector(".errorMessage").innerHTML = tmp;
+        appUI.context.querySelector(".errorMessage").innerHTML = tmp;
     },
 
     clearMessage : function () {
-        ui.context.querySelector(".errorMessage").innerHTML = "";
+        appUI.context.querySelector(".errorMessage").innerHTML = "";
     },
 
 

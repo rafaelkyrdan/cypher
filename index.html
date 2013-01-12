@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
-    <title></title>
+    <title>Cypher</title>
     <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width">
@@ -17,18 +16,11 @@
     <link rel="stylesheet" type="text/css" href="app/bootmetro/content/css/metro-ui-light.css">
     <link rel="stylesheet" type="text/css" href="app/bootmetro/content/css/icomoon.css">
 
-
     <link rel="stylesheet" type="text/css" href="app/css/main.css">
-    <link rel="stylesheet" type="text/css" href="app/css/start.css">
-    <link rel="stylesheet" type="text/css" href="app/css/go.css">
-    <link rel="stylesheet" type="text/css" href="app/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="app/css/howTo.css">
 
-    <script src="app/js/libs/modernizr-2.6.1.min.js"></script>
     <script type="text/javascript" src='app/js/libs/jquery-1.8.2.min.js'></script>
 
-    <script src="app/js/templates.js"></script>
-    <script src="app/js/util.js"></script>
+    <script src="app/js/app.js"></script>
     <script src="app/js/ui.js"></script>
     <script src="app/js/error.js"></script>
     <script src="app/js/init.js"></script>
@@ -39,7 +31,7 @@
 <div id="content" class="container-fluid">
 
     <div class="toolbar">
-        <span class="closeWindow" rel="tooltip"  title="Close application">
+        <span class="closeWindow" data-placement="left" rel="tooltip"  title="Close application">
             <div class="glyph">
                 <div class="fs1" aria-hidden="true" data-icon=""></div>
             </div>
@@ -68,7 +60,7 @@
                     <div class="text-header">Welcome</div>
                     </br>
                     <div class="text">
-                        Cypher - application for privacy of
+                        Cypher - application for privacy
                     </div>
                     <div class="text">
                         your correspondence.
@@ -87,21 +79,20 @@
                 <a class="tile square text tilesquareblock" data-href="settings" href="#">
                     <div class="text-big">
                         <div class="glyph">
-                            <!--<div class="fs1" aria-hidden="true" data-icon="j"></div>-->
                             <div class="fs1" aria-hidden="true" data-icon="k"></div>
                         </div>
                     </div>
                     <br/>
                     <div class="text">Secret key</div>
                 </a>
-                <a class="tile square text tilesquareblock" data-href="go" href="#">
+                <a class="tile square text tilesquareblock" data-href="cypher" href="#">
                     <div class="text-big">
                         <div class="glyph">
                             <div class="fs1" aria-hidden="true" data-icon=""></div>
                         </div>
                     </div>
                     <br/>
-                    <div class="text"> Go</div>
+                    <div class="text"> Cypher</div>
                 </a>
             </div>
             <!--end wrapTile-->
@@ -134,8 +125,8 @@
                         </div>
                         <div id="collapse1" class="accordion-body collapse" style="height: 0px;">
                             <div class="accordion-inner">
-                                 The problem of preserving private data is now more than ever.Every day you exchange information, communicate and receive information. There are many ways to encrypt a message, but the problem is, that the key to encrypt the need to tell your partner, and you can not meet physically, only on the internet. You can not send key on internet, for example, your Internet service provider has access to everything that you send and receive. Simple and clear description of how the algorithm allows the two sides to get secret key using a listening channel.
-                                 http://www.youtube.com/watch?v=3QnD2c4Xovk
+                                The problem of preserving private data is now more than ever. There are many ways to encrypt a message, but the problem is, that the key to encrypt the need to tell your partner. You can not send key on internet, for example, your Internet service provider has access to everything that you send and receive. Cypher uses modern mechanism for encrypt data and does not send secret key. Simple and clear description of how the algorithm allows the two sides to get secret key using a listening channel.
+                                http://www.youtube.com/watch?v=3QnD2c4Xovk
                             </div>
                         </div>
                     </div>
@@ -162,8 +153,8 @@
                         <div id="collapse3" class="accordion-body collapse" style="height: 0px;">
                             <div class="accordion-inner">
                                  Go to the tab "secret key". You should follow the instructions step by step. Important:
-                                 after the generation of public key you should  send it to your partner. The third step:
-                                 you should obtain the public key of your partner. After creating a secret key you can
+                                 after the generation public key you should  send it to your partner. The third step:
+                                 you should obtain the public key your partner. After creating a secret key you can
                                  begin to encrypt his data. Simple and clear description of how
                                  the algorithm allows the two sides to get secret key using a listening channel.
                                  http://www.youtube.com/watch?v=3QnD2c4Xovk
@@ -178,7 +169,7 @@
                         </div>
                         <div id="collapse4" class="accordion-body collapse" style="height: 0px;">
                             <div class="accordion-inner">
-                                Make sure you and your partner have a shared secret key. Go to the tab "go".
+                                Make sure you and your partner have a shared secret key. Go to the tab "cypher".
                                 Insert a text to the left text box and click "transform".
                                 For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
                             </div>
@@ -192,7 +183,7 @@
                         </div>
                         <div id="collapse5" class="accordion-body in collapse" style="height: 0px;">
                             <div class="accordion-inner">
-                                Make sure you and your partner have a shared secret key. Go to the tab "go". If it is necessary to change the direction of the encryption/defifrovaniya. Insert the encrypted text to the right text box and click "transform". In the right box should appear text.
+                                Make sure you and your partner have a shared secret key. Go to the tab "cypher". If it is necessary to change the direction of the encryption/decryption. Insert the encrypted text to the left text box and click "transform". In the right box should appear text.
                                 If  it is not readable, then you and your partner used a different secret keys.
                             </div>
                         </div>
@@ -251,11 +242,11 @@
                         <div id="collapse7" class="accordion-body collapse" style="height: 0px;">
                             <div class="accordion-inner">
                                 Проблема сохранения приватных данных стоит сейчас как никогда остро.
-                                Каждый день вы обмениваетесь информацией, общаетесь и получаете данные.
                                 Существует множество способов зашифровать сообщение, но проблема в том,
-                                что ключ для шифрования нужно сообщить вашему собеседнику, а вы не можете
-                                встретиться физически, только по интернету. Но ваш канал прослушивают,
+                                что ключ для шифрования нужно сообщить вашему собеседнику. Допустим ваш канал прослушивают,
                                 скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
+                                Cypher использует современные механизмы для шифрования (такие же как в банковской системе)
+                                и не передает секретный ключ по открытым каналам.
                                 Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
                                 секретный ключ используя прослушиваемый канал связи.
                                 http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
@@ -304,7 +295,7 @@
                         </div>
                         <div id="collapse10" class="accordion-body collapse" style="height: 0px;">
                             <div class="accordion-inner">
-                                Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "go".
+                                Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
                                 Если необходимо измените направление шифрования/дефифрования. Вставьте в левое поле текст и
                                 нажмите кнопку "transform". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
                                 И отправьте его вашему партнеру.
@@ -319,8 +310,8 @@
                         </div>
                         <div id="collapse11" class="accordion-body in collapse" style="height: 0px;">
                             <div class="accordion-inner">
-                                Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "go".
-                                Если не обходимо измените направление шифрования/дефифрования. Вставьте в левое поле зашифрованный
+                                Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
+                                Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
                                 текст и нажмите кнопку "transform". В правом поле должен появиться тест. Если текст не
                                 читабельный значит вы и ваш партнер используете разные секретные ключи.
                             </div>
@@ -371,7 +362,7 @@
                     <div class="control-group">
                         <div class="controls">
                             <input class="span6" type="password" name="privateKey" placeholder="Click to generate button" disabled>
-                            <span class="help-block">For generate data click to the button "generate".</span>
+                            <span class="help-block">For generate key click to the button "generate".</span>
                         </div>
                     </div>
                     <button data-action="doRand" class="btn btn-success">Generate</button>
@@ -396,7 +387,7 @@
                     <div class="control-group">
                         <div class="controls">
                             <input class="span6" type="text" name="partnerKey" disabled placeholder="Get from your partner">
-                            <span class="help-block">For insert data click to a button.</span>
+                            <span class="help-block">Here you should paste public key of your partner.</span>
                         </div>
                     </div>
                     <button data-action="getKey" class="btn btn-primary">Get from clipboard</button>
@@ -419,24 +410,27 @@
 
     <!--go-->
 
-    <div id="go" class="none">
+    <div id="cypher" class="none">
         <div class="page-header">
-            <h1>Go</h1>
+            <h1>Cypher</h1>
         </div>
 
         <div class="row-fluid">
             <div class="span12">
-                <div class="wrapTransformControl">
-                    <span class="label" data-value="Crypto-text">Text</span>
-                    <span class="changeDirection">
-                        <span class="label label-important"><i class="icon-tab"></i> Change direction</span>
-                    </span>
-                    <span class="label" data-value="Text" >Crypto-text</span>
-                    <button id="transform" class="btn btn-mini btn-primary" type="button">Transform</button>
-                </div>
+                <button id="changeDirection" class="btn btn-mini btn-success" type="button">Change direction</button>
+                <button id="transform" class="btn btn-mini btn-primary" type="button">Transform</button>
             </div>
         </div>
         </br>
+        <div class="row-fluid">
+            <div class="span6">
+                <span class="label" data-value="Crypto-text" >Text</span>
+            </div>
+            <div class="span6">
+                <span class="label" data-value="Text" >Crypto-text</span>
+            </div>
+        </div>
+
         <div class="row-fluid">
             <div class="span6">
                 <div class="wrapTextArea">
@@ -486,9 +480,9 @@
                     <span class="win-label">Secret Key</span>
                 </button>
 
-                <button class="win-command" data-href="go">
+                <button class="win-command" data-href="cypher">
                     <span class="win-commandimage win-commandring"><i class="icon-arrow-right-7"></i></span>
-                    <span class="win-label">Go</span>
+                    <span class="win-label">Cypher</span>
                 </button>
 
             </div>
@@ -498,17 +492,13 @@
 </footer>
 <!--end footer-->
 
-<script type="text/javascript" src="app/bootmetro/scripts/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="app/bootmetro/scripts/jquery.scrollTo.js"></script>
 <script type="text/javascript" src="app/bootmetro/scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="app/bootmetro/scripts/bootmetro.js"></script>
-<script type="text/javascript" src="app/bootmetro/scripts/bootmetro-charms.js"></script>
-<script type="text/javascript" src="app/bootmetro/scripts/demo.js"></script>
-<script type="text/javascript" src="app/bootmetro/scripts/holder.js"></script>
-<script type="text/javascript" src="app/bootmetro/scripts/bootstrap-datepicker.js"></script>
 
 <script type="text/javascript">
-    $(".metro").metro();
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
 </script>
 
 <script type="text/javascript" src="app/bigInteger/jsbn.js"></script>

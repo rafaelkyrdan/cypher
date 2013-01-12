@@ -5,15 +5,13 @@
 *About Application*
 
 The problem of preserving private data is now more than ever.
-Every day you exchange information, communicate and receive information.
 There are many ways to encrypt a message, but the problem is, 
-that the key to encrypt the need to tell your partner,
-and you can not meet physically, only on the internet.
+that the key to encrypt the need to tell your partner.
 You can not send key on internet, for example,
 your Internet service provider has access to everything that you send and receive.
-Simple and clear description of how the algorithm allows
-the two sides to get secret key using a listening channel.
-http://www.youtube.com/watch?v=3QnD2c4Xovk
+Cypher uses modern mechanism for encrypt data and does not send secret key.
+Simple and clear description of how the algorithm allows the two sides
+to get secret key using a listening channel.
 
 *How to install?*
 
@@ -21,7 +19,7 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 
 **Mac**
-
+coming soon
 
 **Linux**
 
@@ -59,24 +57,24 @@ uses new keys.
 *How to create secret key?*
 
 Go to the tab "secret key". You should follow the instructions step by step. Important:
-after the generation of public key you should send it to your partner. The third step:
-you should obtain the public key of your partner. After creating a secret key you can
+after the generation public key you should  send it to your partner. The third step:
+you should obtain the public key your partner. After creating a secret key you can
 begin to encrypt his data. Simple and clear description of how
 the algorithm allows the two sides to get secret key using a listening channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 *How to create crypto-text?*
 
-Make sure you and your partner have a shared secret key. Go to the tab "go".
+Make sure you and your partner have a shared secret key. Go to the tab "cypher".
 Insert a text to the left text box and click "transform".
 For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
 
 *How to decrypt text?*
 
 Make sure you and your partner have a shared secret key.
-Go to the tab "go". If it is necessary to change the direction
-of the encryption/defifrovaniya. Insert the encrypted text
-to the right text box and click "transform". In the right box should appear text.
+Go to the tab "cypher". If it is necessary to change the direction
+of the encryption/decryption. Insert the encrypted text
+to the left text box and click "transform". In the right box should appear text.
 If  it is not readable, then you and your partner used a different secret keys.
 
 *Licence*
@@ -88,11 +86,11 @@ Read the text of licence.
 *Про приложение.*
 
 Проблема сохранения приватных данных стоит сейчас как никогда остро.
-Каждый день вы обмениваетесь информацией, общаетесь и получаете данные.
 Существует множество способов зашифровать сообщение, но проблема в том,
-что ключ для шифрования нужно сообщить вашему собеседнику, а вы не можете
-встретиться физически, только по интернету. Но ваш канал прослушивают,
+что ключ для шифрования нужно сообщить вашему собеседнику. Допустим ваш канал прослушивают,
 скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
+Cypher использует современные механизмы для шифрования (такие же как в банковской системе)
+и не передает секретный ключ по открытым каналам.
 Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
 секретный ключ используя прослушиваемый канал связи.
 http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
@@ -104,6 +102,7 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 **Mac**
 
+coming soon
 
 **Linux**
 
@@ -160,7 +159,7 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 *Как разшифровать текст?*
 
 Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "go".
-Если не обходимо измените направление шифрования/дефифрования. Вставьте в левое поле зашифрованный
+Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
 текст и нажмите кнопку "transform". В правом поле должен появиться тест. Если текст не
 читабельный значит вы и ваш партнер используете разные секретные ключи.
 

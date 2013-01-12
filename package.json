@@ -4,10 +4,10 @@
     "version": "0.1",
     "window": {
         "title" : "Cypher",
-        "icon": "app/img/label.png",
+        "icon": "app/img/lock.png",
         "as_desktop" : false,
         "resizable" : false,
-        "always-on-top" : true,
+        "always-on-top" : false,
         "fullscreen" : false,
         "kiosk" : false,
         "frame" : false,
