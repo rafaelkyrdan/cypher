@@ -73,7 +73,7 @@ app = {
              return false;
         }
 
-        if ( app.currentDirection == "ecrypt" ) {
+        if ( app.currentDirection == "encrypt" ) {
 
             app.cipher( val )
 

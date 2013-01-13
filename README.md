@@ -18,6 +18,37 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 **Windows**
 
+You can download application.
+
+1. Unzip the archive.
+2. Directory consist of application and required files.
+3. Run the file cypher.
+
+Versions:
+
+[0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
+
+**or** create application from source (for advanced users). You should download
+project node-webkit https://github.com/rogerwang/node-webkit .
+There are some commands for console.
+
+
+1. Go to your project directory  cd ~/Projects/my_app
+2. Create a zip file (this is built into XP, Vista and 7)
+3. Copy all of your files into the zip file, retaining directory
+structure and making sure that the package.json file is in the root directory
+(if you make a zip file containing a folder with your stuff in it, then it's not going to work)
+4. Rename the file extension from .zip to .nw. By default, file extensions may be hidden.
+You need to (press alt), go to folder options and uncheck "Hide extensions for known file types" to be able to rename the zip.
+5. On Windows, the easiest way to run the app is to drag the folder onto nw.exe.
+
+Making an executable file out of a .nw file
+
+1. copy /b nw.exe+app.nw app.exe
+
+Then, all you have to do is zip app.exe and required DLLs, and distribute them.
+And please also note that the nw.pak must also be distributed along with the app.exe.
+
 
 **Mac**
 
@@ -76,7 +107,7 @@ For copy to clipboard click to the button "copy to clipboard". And send it to yo
 
 Go to the tab "cypher". If it is necessary to change the direction
 of the encryption/decryption. Insert the encrypted text
-to the left text box and click "transform". In the right box should appear text.
+to the left text box and click "decrypt". In the right box should appear text.
 If  it is not readable, then you and your partner used a different secret keys.
 
 *Licence*
@@ -99,6 +130,33 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 *Как установить?*
 
 **Windows**
+
+Вы можете скачать готовое приложение.
+
+1.Разархивируйте приложение.
+2.Директория содержит приложение и все библиотеки от которых зависит работа приложения.
+2.Запустите файл cypher.
+
+Версии:
+
+[0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
+
+
+**или** собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
+проэкт node-webkit https://github.com/rogerwang/node-webkit
+и вот такие команды:
+
+1. Перейдите в папку проэкта  ~/Projects/my_app
+2. Создайте .zip архив
+3. Поменяйте расширение с .zip на расширение .nw
+4. Переместите его в папку где находится проэкт node-webkit
+5. Самый простой способ запустить приложение, это перетащить app.nw на nw.exe.
+
+Для создания исполняемого файла с .nw файла выполните
+
+1. copy /b nw.exe+app.nw app.exe
+
+Помните что приложение зависит от файла nw.pak и необходимых .dll файлов.
 
 
 **Mac**
