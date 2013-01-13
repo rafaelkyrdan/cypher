@@ -4,14 +4,14 @@
 
 *About Application*
 
-The problem of preserving private data is now more than ever.
+The problem of protecting private data is now more than ever.
 There are many ways to encrypt a message, but the problem is, 
 that the key to encrypt the need to tell your partner.
 You can not send key on internet, for example,
 your Internet service provider has access to everything that you send and receive.
 Cypher uses modern mechanism for encrypt data and does not send secret key.
 Simple and clear description of how the algorithm allows the two sides
-to get secret key using a listening channel.
+to get secret key using a unsafe channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 *How to install?*
@@ -53,23 +53,23 @@ Making an executable file out of a .nw file
 *Why cypher?*
 
 Cypher does not transmit the secret key. Cypher not Use Internet connection.
-Cypher does not store the keys, when you turn off the application keys are removed. For each session
+Cypher does not store the keys, when you turn off application, keys are removed. For each session
 uses new keys.
 
 *How to create secret key?*
 
 Go to the tab "secret key". You should follow the instructions step by step. Important:
 after the generation public key you should  send it to your partner. The third step:
-you should obtain the public key your partner. After creating a secret key you can
+you should get the public key your partner. After creating a secret key you can
 begin to encrypt. Simple and clear description of how
-the algorithm allows the two sides to get secret key using a listening channel.
+the algorithm allows the two sides to get secret key using a unsafe channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 
 *How to create crypto-text?*
 
 Make sure you and your partner have a shared secret key. Go to the tab "cypher".
-Insert a text to the left text box and click "transform".
+Insert a text to the left text box and click "encrypt".
 For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
 
 *How to decrypt text?*
@@ -87,7 +87,7 @@ Read the text of licence.
 
 *Про приложение.*
 
-Проблема сохранения приватных данных стоит сейчас как никогда остро.
+Проблема защиты приватных данных стоит сейчас как никогда остро.
 Существует множество способов зашифровать сообщение, но проблема в том,
 что ключ для шифрования нужно сообщить вашему собеседнику. Допустим ваш канал прослушивают,
 скажем, ваш интернет-провайдер имеет доступ ко всему, что вы отправляете и получаете.
@@ -154,14 +154,14 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
 Если необходимо измените направление шифрования/дешифрования. Вставьте в левое поле текст и
-нажмите кнопку "transform". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
+нажмите кнопку "encrypt". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
 И отправьте его вашему партнеру.
 
 *Как разшифровать текст?*
 
 Пройдите во вкладку "cypher".
 Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
-текст и нажмите кнопку "transform". В правом поле должен появиться тест. Если текст не
+текст и нажмите кнопку "decrypt". В правом поле должен появиться тест. Если текст не
 читабельный значит вы и ваш партнер используете разные секретные ключи.
 
 *Лицензия.*

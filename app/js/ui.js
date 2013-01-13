@@ -36,6 +36,10 @@ appUI = {
             titles[i].innerText = titles[i].dataset.value;
             titles[i].dataset.value = currentValue;
         }
+
+        var button = appUI.context.querySelector("#transform");
+        button.innerText = ( app.currentDirection == "encrypt" ) ? "Decrypt" : "Encrypt" ;
+
     },
 
     manageText : function ( obj ) {
@@ -67,7 +71,7 @@ appUI = {
                         '<strong>Warning! </strong>' + str +
                   '</div>';
 
-        appUI.context.querySelector(".errorMessage").innerHTML = tmp;
+        appUI.context.querySelector( ".errorMessage" ).innerHTML = tmp;
     },
 
     showSuccessMessage : function ( str ) {
@@ -77,11 +81,11 @@ appUI = {
             '<strong>Warning! </strong>' + str +
             '</div>';
 
-        appUI.context.querySelector(".errorMessage").innerHTML = tmp;
+        appUI.context.querySelector( ".errorMessage" ).innerHTML = tmp;
     },
 
     clearMessage : function () {
-        appUI.context.querySelector(".errorMessage").innerHTML = "";
+        appUI.context.querySelector( ".errorMessage" ).innerHTML = "";
     },
 
 

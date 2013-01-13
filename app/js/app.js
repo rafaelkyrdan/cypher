@@ -1,7 +1,7 @@
 
 app = {
 
-    currentDirection : "crypto",
+    currentDirection : "encrypt",
     q : "",
     b : "",
     gx : "",
@@ -38,7 +38,7 @@ app = {
 
     changeDirection : function () {
 
-        app.currentDirection = ( app.currentDirection == "crypto" ) ?  "text" : "crypto";
+        app.currentDirection = ( app.currentDirection == "encrypt" ) ?  "decrypt" : "encrypt";
 
     },
 
@@ -73,7 +73,7 @@ app = {
              return false;
         }
 
-        if ( app.currentDirection == "crypto" ) {
+        if ( app.currentDirection == "ecrypt" ) {
 
             app.cipher( val )
 
@@ -186,7 +186,7 @@ app = {
 
         if( app.partnerKey == "" ) {
 
-            appUI.showAlert("Please get partner's public value first");
+            appUI.showAlert( "Please get partner's public value first" );
             return;
 
         }
@@ -203,7 +203,7 @@ app = {
         app.encryptionKey = value;
         appUI.context.querySelector( "input[name='secretKey']" ).value = value;
 
-        appUI.showSuccessMessage("Уou are created secure key, now you can encrypt your message.");
+        appUI.showSuccessMessage( "Уou are created secure key, now you can encrypt your message." );
 
         setTimeout( function () {
             appUI.clearMessage();
