@@ -65,7 +65,7 @@ Versions:
 
 [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
-or create application from source (for advanced users). You should download
+**or** create application from source (for advanced users). You should download
 project node-webkit https://github.com/rogerwang/node-webkit .
 There are some commands for console.
 
@@ -83,7 +83,7 @@ Making an executable file out of a .nw file
 
 *Why cypher?*
 
-Cypher does not transmit the secret key. Cypher not Use Internet connection.
+Cypher does not transmit the secret key. Cypher not use Internet connection.
 Cypher does not store the keys, when you turn off application, keys are removed. For each session
 uses new keys.
 
@@ -175,7 +175,7 @@ coming soon
 [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 
-или собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
+**или** собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
 проэкт node-webkit https://github.com/rogerwang/node-webkit
 и вот такие команды:
 
