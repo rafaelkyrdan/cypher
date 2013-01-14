@@ -26,7 +26,6 @@ You can download application.
 
 Versions:
 
-[0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
 [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
@@ -65,6 +64,7 @@ You can download application.
 Versions:
 
 [0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
+
 [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
@@ -173,6 +173,8 @@ coming soon
 2.Запустите файл cypher. Не удаляйте файл nw.pak он является частью приложения.
 
 Версии:
+
+[0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
 
 [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
