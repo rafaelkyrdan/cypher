@@ -26,6 +26,8 @@ You can download application.
 
 Versions:
 
+[0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
+
 [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
@@ -140,6 +142,8 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 2.Запустите файл cypher.
 
 Версии:
+
+[0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
 
 [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
