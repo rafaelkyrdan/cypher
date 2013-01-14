@@ -21,7 +21,7 @@ app = {
 
             setTimeout( function () {
                 appUI.clearMessage();
-            }, 3000);
+            }, 30000);
 
 
         } else if ( appUI.currentPage == "settings" && app.encryptionKey != "" ) {
@@ -30,7 +30,7 @@ app = {
 
             setTimeout( function () {
                 appUI.clearMessage();
-            }, 3000);
+            }, 30000);
 
 
         }
@@ -42,9 +42,49 @@ app = {
 
     },
 
+    manageText : function ( obj ) {
+
+        var textArea = appUI.context.querySelector( "#" + obj.dataset.id );
+        var action = obj.dataset.action;
+
+        switch ( action ) {
+            case "get" :
+                app.getText();
+                break;
+            case "copy" :
+                app.copyText( textArea );
+                break;
+            case "remove" :
+                textArea.value = "";
+                break;
+            default:
+                errorHandler.toLog( { msg: "Incorrect action" + action, obj: "appUI", method: "manageText" } );
+                break;
+        }
+
+    },
+
+    copyText : function ( elem ) {
+
+        app.copyToClipBoard( elem.value );
+
+        appUI.showSuccessMessage("You copied text to clipboard.")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
+
+    },
+
     getText : function () {
 
         appUI.context.querySelector( "#left" ).value = app.trim( app.getFromClipBoard() );
+
+        appUI.showSuccessMessage("You got text from clipboard.")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
 
     },
 
@@ -139,6 +179,12 @@ app = {
         app.privateKey = r.toString();
         appUI.context.querySelector( "input[name='privateKey']" ).value = r.toString();
 
+        appUI.showSuccessMessage("You have successfully created private key. Now you should go to step 2.")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
+
     },
 
 
@@ -160,11 +206,24 @@ app = {
         app.publicKey = value;
         appUI.context.querySelector( "input[name='publicKey']" ).value =  value;
 
+        appUI.showSuccessMessage("Now you should copy your public key. Click to button \"copy to clipboard\".")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
+
     },
 
     copyKey : function () {
 
         app.copyToClipBoard( app.publicKey );
+
+        appUI.showSuccessMessage("You copied your public key to clipboard. Now you should send it your partner." +
+            " After that get public key your partner.")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
 
     },
 
@@ -172,6 +231,12 @@ app = {
 
         app.partnerKey = app.trim( app.getFromClipBoard() );
         appUI.context.querySelector( "input[name='partnerKey']" ).value = app.partnerKey;
+
+        appUI.showSuccessMessage("You got and pasted public key your partner.")
+
+        setTimeout( function () {
+            appUI.clearMessage();
+        }, 30000);
 
     },
 
@@ -207,7 +272,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 3000);
+        }, 30000);
 
     },
 

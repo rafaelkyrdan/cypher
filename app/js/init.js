@@ -37,7 +37,8 @@ function init () {
     var spans = appUI.context.querySelectorAll( ".tools > span" );
     for ( var i = 0; i < spans.length; i++ ) {
         spans[i].onclick = function ( e ) {
-            appUI.manageText( this );
+            //appUI.manageText( this );
+            app.manageText( this );
             return false;
         };
     }

@@ -78,7 +78,7 @@ appUI = {
 
         var tmp = '<div class="alert alert-success">' +
             '<i class="close"  onclick="appUI.clearMessage()"></i>' +
-            '<strong>Warning! </strong>' + str +
+            '<strong>' + str + '</strong>' +
             '</div>';
 
         appUI.context.querySelector( ".errorMessage" ).innerHTML = tmp;
