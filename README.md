@@ -1,4 +1,4 @@
-#Cypher - desktop application for privacy of your correspondence.
+#Cypher - desktop application for privacy your online correspondence.
 
 ##English
 
