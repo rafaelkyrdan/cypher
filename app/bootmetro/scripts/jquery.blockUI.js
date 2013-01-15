@@ -73,7 +73,7 @@ $.blockUI.defaults = {
 	message:  '<h1>Please wait...</h1>',
 
 	title: null,	  // title string; only used when theme == true
-	draggable: true,  // only used when theme == true (requires jquery-ui.js to be loaded)
+	draggable: true,  // only used when theme == true (requires jquery-appUI.js to be loaded)
 	
 	theme: false, // set to true to use with jQuery UI themes
 	
