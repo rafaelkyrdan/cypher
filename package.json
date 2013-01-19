@@ -1,7 +1,7 @@
 {
     "main": "index.html",
     "name": "cypher",
-    "version": "0.1",
+    "version": "0.2",
     "window": {
         "title" : "Cypher",
         "icon": "app/img/lock.png",
