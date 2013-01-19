@@ -59,9 +59,8 @@ You can download application.
 
 Versions:
 
-[0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
-
-[0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
+- [0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
+- [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
 project node-webkit https://github.com/rogerwang/node-webkit .
@@ -98,9 +97,8 @@ You can download application.
 
 Versions:
 
-[0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
-
-[0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
+- [0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
+- [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
 project node-webkit https://github.com/rogerwang/node-webkit .
@@ -180,9 +178,8 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 Версии:
 
-[0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
-
-[0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
+- [0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
+- [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 
 **или** собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
@@ -215,9 +212,8 @@ coming soon
 
 Версии:
 
-[0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
-
-[0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
+- [0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
+- [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 
 **или** собрать приложение из исходников (для продвинутых пользователей). Вам необходимо скачать
