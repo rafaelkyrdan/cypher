@@ -21,7 +21,7 @@ app = {
 
             setTimeout( function () {
                 appUI.clearMessage();
-            }, 30000);
+            }, 10000);
 
 
         } else if ( appUI.currentPage == "settings" && app.encryptionKey != "" ) {
@@ -30,7 +30,7 @@ app = {
 
             setTimeout( function () {
                 appUI.clearMessage();
-            }, 30000);
+            }, 10000);
 
 
         }
@@ -72,7 +72,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -84,7 +84,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -183,7 +183,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -210,7 +210,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -223,7 +223,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -236,7 +236,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 
@@ -272,7 +272,7 @@ app = {
 
         setTimeout( function () {
             appUI.clearMessage();
-        }, 30000);
+        }, 10000);
 
     },
 

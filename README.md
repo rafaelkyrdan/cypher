@@ -5,7 +5,7 @@
 *About Application*
 
 The problem of protecting private data is now more than ever.
-There are many ways to encrypt a message, but the problem is, 
+There are many ways to encrypt a message, but the problem is
 that the key to encrypt the need to tell your partner.
 You can not send key on internet, for example,
 your Internet service provider has access to everything that you send and receive.
@@ -14,6 +14,39 @@ Simple and clear description of how the algorithm allows the two sides
 to get secret key using a unsafe channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
+*Why cypher?*
+
+Cypher does not transmit the secret key. Cypher not use Internet connection.
+Cypher does not store the keys, when you turn off application, keys are removed. For each session
+uses new keys.
+
+*How to create secret key?*
+
+Go to the tab "secret key". You should follow the instructions step by step. Important:
+after the generation public key you should  send it to your partner. The third step:
+you should get the public key your partner. After creating a secret key you can
+begin to encrypt. Simple and clear description of how
+the algorithm allows the two sides to get secret key using a unsafe channel.
+http://www.youtube.com/watch?v=3QnD2c4Xovk
+
+
+*How to create crypto-text?*
+
+Make sure you and your partner have a shared secret key. Go to the tab "cypher".
+Insert a text to the left text box and click "encrypt".
+For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
+
+*How to decrypt text?*
+
+Go to the tab "cypher". If it is necessary to change the direction
+of the encryption/decryption. Insert the encrypted text
+to the left text box and click "decrypt". In the right box should appear text.
+If  it is not readable, then you and your partner used a different secret keys.
+
+*Licence*
+
+Read the text of licence.
+
 *How to install?*
 
 **Windows**
@@ -21,7 +54,7 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 You can download application.
 
 1. Unzip the archive.
-2. Directory consist of application and required files.
+2. The directory consist of application and required files.
 3. Run the file cypher.
 
 Versions:
@@ -85,39 +118,6 @@ Making an executable file out of a .nw file
 1. cat /usr/bin/nw app.nw > app && chmod +x app
 
 
-*Why cypher?*
-
-Cypher does not transmit the secret key. Cypher not use Internet connection.
-Cypher does not store the keys, when you turn off application, keys are removed. For each session
-uses new keys.
-
-*How to create secret key?*
-
-Go to the tab "secret key". You should follow the instructions step by step. Important:
-after the generation public key you should  send it to your partner. The third step:
-you should get the public key your partner. After creating a secret key you can
-begin to encrypt. Simple and clear description of how
-the algorithm allows the two sides to get secret key using a unsafe channel.
-http://www.youtube.com/watch?v=3QnD2c4Xovk
-
-
-*How to create crypto-text?*
-
-Make sure you and your partner have a shared secret key. Go to the tab "cypher".
-Insert a text to the left text box and click "encrypt".
-For copy to clipboard click to the button "copy to clipboard". And send it to your partner.
-
-*How to decrypt text?*
-
-Go to the tab "cypher". If it is necessary to change the direction
-of the encryption/decryption. Insert the encrypted text
-to the left text box and click "decrypt". In the right box should appear text.
-If  it is not readable, then you and your partner used a different secret keys.
-
-*Licence*
-
-Read the text of licence.
-
 ##Russian
 
 *Про приложение*
@@ -130,6 +130,43 @@ Cypher использует современные механизмы для ш�
 Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
 секретный ключ используя прослушиваемый канал связи.
 http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
+
+*Почему Cypher?*
+
+Cypher не передает секретный ключ, по этому усложняется возможность третей стороне получить
+доступ к приватным данным. Cypher не использует интернет соединения для своей работы.
+Cypher не хранит ключи, при выключении приложения ключи удаляются. Для каждого сеанса связи
+используются новые ключи, да это не удобно но это безопасно.
+
+*Как создать секретный ключ?*
+
+Пройдите во вкладку "secret key". Вам необходимо проити все шаги инструкции по очереди. Для создания
+ключа используйте кнопку "generate", для копирования данных используйте кнопку "copy to clipboard",
+для вставки скопированных данных используйте кнопку "get from clipboard". На втором шаге после генерации
+публичного ключа необходимо отправить его вашему партнеру. Третий шаг это получение публичного ключа вашего партнера.
+После создания секретного ключа общего для вас и вашего партнера вы можете приступить к защите
+своих данных. Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
+секретный ключ используя прослушиваемый канал связи.
+http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
+
+*Как зашифровать текст?*
+
+Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
+Если необходимо измените направление шифрования/дешифрования. Вставьте в левое поле текст и
+нажмите кнопку "encrypt". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
+И отправьте его вашему партнеру.
+
+*Как разшифровать текст?*
+
+Пройдите во вкладку "cypher".
+Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
+текст и нажмите кнопку "decrypt". В правом поле должен появиться текст. Если текст не
+читабельный значит вы и ваш партнер используете разные секретные ключи.
+
+*Лицензия.*
+
+Читай текст лицензии.
+
 
 *Как установить?*
 
@@ -198,39 +235,4 @@ coming soon
 1. cat /usr/bin/nw app.nw > app && chmod +x app
 
 
-*Почему Cypher?*
-
-Cypher не передает секретный ключ, по этому усложняется возможность третей стороне получить
-доступ к приватным данным. Cypher не использует интернет соединения для своей работы.
-Cypher не хранит ключи, при выключении приложения ключи удаляются. Для каждого сеанса связи
-используются новые ключи, да это не удобно но это безопасно.
-
-*Как создать секретный ключ?*
-
-Пройдите во вкладку "secret key". Вам необходимо проити все шаги инструкции по очереди. Для создания
-ключа используйте кнопку "generate", для копирования данных используйте кнопку "copy to clipboard",
-для вставки скопированных данных используйте кнопку "get from clipboard". На втором шаге после генерации
-публичного ключа необходимо отправить его вашему партнеру. Третий шаг это получение публичного ключа вашего партнера.
-После создания секретного ключа общего для вас и вашего партнера вы можете приступить к защите
-своих данных. Простое и наглядное описание того, как работает алгоритм позволяющий двум сторонам получить
-секретный ключ используя прослушиваемый канал связи.
-http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
-
-*Как зашифровать текст?*
-
-Убедитесь что у вас и вашего партнера создан общий секретный ключ. Пройдите во вкладку "cypher".
-Если необходимо измените направление шифрования/дешифрования. Вставьте в левое поле текст и
-нажмите кнопку "encrypt". Спомощью кнопки "copy to clipboard" скопируйте зашифрованный текст.
-И отправьте его вашему партнеру.
-
-*Как разшифровать текст?*
-
-Пройдите во вкладку "cypher".
-Если не обходимо измените направление шифрования/дешифрования. Вставьте в левое поле зашифрованный
-текст и нажмите кнопку "decrypt". В правом поле должен появиться тест. Если текст не
-читабельный значит вы и ваш партнер используете разные секретные ключи.
-
-*Лицензия.*
-
-Читай текст лицензии.
 

@@ -109,7 +109,6 @@ appUI = {
 
     },
 
-
     removeClass : function (elem, clazz) {
 
         var c = elem.className.split(' ');
