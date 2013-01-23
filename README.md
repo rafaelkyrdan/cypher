@@ -47,6 +47,13 @@ If  it is not readable, then you and your partner used a different secret keys.
 
 Read the text of licence.
 
+*Credits*
+
+This application includes the following libs:
+
+- [RSA and ECC](http://www-cs-students.stanford.edu/~tjw/jsbn/) in JavaScript toolset, (c) 2005 by Tom Wu, released under a [BSD license](http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE)
+- [BootMetro](http://aozora.github.com/bootmetro/) Metro style web framework.
+
 *How to install?*
 
 **Windows**
@@ -164,6 +171,13 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 *Лицензия.*
 
 Читай текст лицензии.
+
+*Зависимости*
+
+Это приложение включает в себя следующие библиотеки
+
+- [RSA and ECC](http://www-cs-students.stanford.edu/~tjw/jsbn/) in JavaScript toolset, (c) 2005 by Tom Wu, released under a [BSD license](http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE)
+- [BootMetro](http://aozora.github.com/bootmetro/) Metro style web framework.
 
 
 *Как установить?*
