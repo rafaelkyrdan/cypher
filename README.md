@@ -66,7 +66,7 @@ You can download application.
 
 Versions:
 
-- [0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
+- [0.2](https://www.dropbox.com/s/2ockj4tkcro8emg/cypher-win-0.2.zip)
 - [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
@@ -104,7 +104,7 @@ You can download application.
 
 Versions:
 
-- [0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
+- [0.2](https://www.dropbox.com/s/xgktm8g6rmg4hkg/cypher-linux-0.2.zip)
 - [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 **or** create application from source (for advanced users). You should download
@@ -192,7 +192,7 @@ http://www.youtube.com/watch?feature=player_embedded&v=VBDJ0ERjnD4
 
 Версии:
 
-- [0.2](https://www.dropbox.com/s/yihgrlrqnqw8cz8/cypher-0.2.zip)
+- [0.2](https://www.dropbox.com/s/2ockj4tkcro8emg/cypher-win-0.2.zip)
 - [0.1](https://www.dropbox.com/s/vq7asd7nksf9h3j/cypher-0.1.zip)
 
 
@@ -226,7 +226,7 @@ coming soon
 
 Версии:
 
-- [0.2](https://www.dropbox.com/s/2nwle4a9ap72vjt/cypher-0.2.zip)
+- [0.2](https://www.dropbox.com/s/xgktm8g6rmg4hkg/cypher-linux-0.2.zip)
 - [0.1](https://www.dropbox.com/s/tjw2fh8l0jc03td/cypher-0.1.zip)
 
 
