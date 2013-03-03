@@ -23,11 +23,15 @@ It is free. Cypher does not transmit the secret key. Cypher not use Internet con
 Cypher does not store the keys, when you turn off application, keys are removed. For each session
 uses new keys.
 
+*Donate*
+
+[Donate this project](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MSGTAVUXX9A8Y)
+
 *How to install?*
 
 **Windows**
 
-You can [download](https://www.dropbox.com/s/2ockj4tkcro8emg/cypher-win-0.2.zip) application.
+You can **[download](https://www.dropbox.com/s/2ockj4tkcro8emg/cypher-win-0.2.zip)** application.
 
 1. Unzip the archive.
 2. The directory consist of application and required files.
@@ -55,7 +59,7 @@ And please also note that the nw.pak must also be distributed along with the app
 
 **Linux**
 
-You can [download](https://www.dropbox.com/s/xgktm8g6rmg4hkg/cypher-linux-0.2.zip) application.
+You can **[download](https://www.dropbox.com/s/xgktm8g6rmg4hkg/cypher-linux-0.2.zip)** application.
 
 1. Unzip the application.
 2. Run the file cypher. Do not delete file nw.pak , it is part of application.
@@ -108,9 +112,7 @@ This application includes the following libs:
 - [RSA and ECC](http://www-cs-students.stanford.edu/~tjw/jsbn/) in JavaScript toolset, (c) 2005 by Tom Wu, released under a [BSD license](http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE)
 - [BootMetro](http://aozora.github.com/bootmetro/) Metro style web framework.
 
-*Donate*
 
-[Donate this project](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MSGTAVUXX9A8Y)
 
 
 
