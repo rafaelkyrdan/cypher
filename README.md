@@ -1,7 +1,5 @@
 #Cypher - desktop application for protect your online messaging.
 
-##English
-
 *About Application*
 
 Cypher - an easy to use application for protection of private
