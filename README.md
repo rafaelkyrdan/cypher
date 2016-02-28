@@ -1,5 +1,8 @@
 #Cypher - desktop application for protect your online messaging.
 
+*TODO:*
+This application requires a refactoring and cleaning. It has been written more than 3 years ago with lack of knowledge what is a good code style.
+
 *About Application*
 
 Cypher - an easy to use application for protection of private
